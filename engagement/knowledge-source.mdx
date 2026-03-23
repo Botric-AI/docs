@@ -1,0 +1,140 @@
+---
+title: Knowledge Sources
+description: Manage the content that powers your AI agents — from website crawls to documents, FAQs, and media.
+icon: database
+---
+
+Knowledge Sources are the content your AI agents use to answer questions, draft emails, and engage with visitors. The more relevant and comprehensive your knowledge sources, the better your agents perform.
+
+{/* IMAGE: Knowledge Sources management page showing different source types */}
+
+## Source Types
+
+Botric supports multiple types of knowledge sources, giving you flexibility in how you provide information to your AI agents.
+
+### Website Crawl
+
+Botric crawls the pages you selected during [onboarding](/getting-started/onboarding) and indexes their content. This is the most common source type and is set up automatically.
+
+- Content is extracted from your web pages and structured for AI consumption.
+- You can add additional URLs or re-crawl existing pages at any time.
+- Crawl frequency can be configured to keep content up to date.
+
+### Document
+
+Upload text-based documents that contain information you want your agents to know.
+
+- Supported formats: PDF, DOCX, TXT
+- Ideal for product manuals, policy documents, and internal guides
+
+### FAQ
+
+Create structured question-and-answer pairs that your agents can use for precise responses.
+
+- Best for common questions with definitive answers
+- Provides the highest accuracy for covered topics
+- Easy to create and maintain
+
+### File
+
+Upload general files that contain relevant data or information.
+
+- Supports various file formats
+- Content is extracted and indexed for AI access
+
+### Audio
+
+Upload audio recordings that Botric transcribes and adds to your knowledge base.
+
+- Supported formats: MP3, WAV, M4A
+- Useful for training recordings, podcast content, or call recordings
+
+### Video
+
+Upload video files that Botric transcribes and indexes.
+
+- Supported formats: MP4, MOV, WEBM
+- Ideal for product demos, tutorials, or webinar recordings
+
+{/* IMAGE: Source type selection when adding a new source */}
+
+## Adding a Knowledge Source
+
+<Steps>
+  <Step title="Navigate to Knowledge Sources">
+    Open the **Engagement** section in the sidebar and click **Knowledge Sources**.
+  </Step>
+  <Step title="Click Add Source">
+    Click the **Add Source** button and select the source type you want to add.
+  </Step>
+  <Step title="Provide the content">
+    Depending on the source type:
+    - **Website Crawl** — Enter the URLs you want to crawl.
+    - **Document / File** — Upload your file.
+    - **FAQ** — Enter question-and-answer pairs.
+    - **Audio / Video** — Upload your media file for transcription.
+  </Step>
+  <Step title="Process and index">
+    Botric processes the content, extracts text, and indexes it for your AI agents. Processing time varies by source type and size.
+  </Step>
+</Steps>
+
+<Note>
+  Large files and media uploads may take longer to process. You can continue using the platform while processing runs in the background.
+</Note>
+
+## Managing Sources
+
+### Viewing Sources
+
+The Knowledge Sources page lists all your sources with:
+
+- Source name and type
+- Processing status (processing, ready, error)
+- Date added
+- Linked agents
+
+### Editing Sources
+
+Click on any source to update its content:
+
+- Re-crawl website pages to pick up changes
+- Replace uploaded files with updated versions
+- Edit FAQ entries
+
+### Deleting Sources
+
+To remove a source, click the **Delete** button on the source detail page.
+
+<Warning>
+  Deleting a knowledge source removes it from all linked agents. Make sure no active agents depend solely on the source you're deleting.
+</Warning>
+
+## Linking Sources to Agents
+
+Knowledge sources are shared across your AI agents. When you [create a Chat Agent](/engagement/chat-agent/create-bot) or configure the [Email Agent](/engagement/email-agent/overview), you select which knowledge sources that agent can access.
+
+- A single source can be linked to multiple agents.
+- An agent can use multiple sources simultaneously.
+- Changes to a source (re-crawl, update) automatically apply to all linked agents.
+
+<Tip>
+  Keep your knowledge sources organized by topic or department. This makes it easier to link the right sources to the right agents.
+</Tip>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Chat Agent" icon="robot" href="/engagement/chat-agent/overview">
+    Build a chatbot powered by your knowledge sources.
+  </Card>
+  <Card title="Email Agent" icon="envelope" href="/engagement/email-agent/overview">
+    Set up AI-powered email responses.
+  </Card>
+  <Card title="Leads" icon="user-plus" href="/conversion/leads">
+    View leads captured by your agents.
+  </Card>
+  <Card title="Site Audit" icon="stethoscope" href="/discovery/site-audit">
+    Run a website health check.
+  </Card>
+</CardGroup>

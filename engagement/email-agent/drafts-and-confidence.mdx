@@ -1,0 +1,90 @@
+---
+title: Drafts & Confidence
+description: Review AI-generated email drafts, understand confidence scores, and improve response quality.
+icon: file-pen
+---
+
+When the Email Agent processes an incoming email, it generates a draft response and assigns a confidence score. This page explains how to work with drafts, interpret confidence scores, and improve the quality of AI-generated responses.
+
+{/* IMAGE: Drafts list showing multiple email drafts with confidence scores */}
+
+## Viewing Drafts
+
+Navigate to **Engagement > Email Agent** to see all AI-generated drafts. Each draft shows:
+
+- **Subject line** of the original email
+- **Sender** information
+- **Draft preview** — the first few lines of the AI-generated response
+- **Confidence score** — how certain the AI is about the response quality
+- **Timestamp** — when the draft was generated
+
+Click any draft to open the full view where you can read, edit, and send the response.
+
+{/* IMAGE: Draft detail view with full response and edit controls */}
+
+## Understanding Confidence Scores
+
+Every draft includes a confidence score expressed as a percentage. This score reflects how well the AI was able to match the incoming email's question or request with information from your [Knowledge Sources](/engagement/knowledge-source).
+
+| Score Range | Level | Meaning |
+|-------------|-------|---------|
+| **80–100%** | High | The AI found strong matches in your knowledge base and is confident in the response. |
+| **50–79%** | Medium | The AI found partial matches. The draft may need some editing for accuracy. |
+| **Below 50%** | Low | The AI had limited information. Review carefully and consider writing a manual response. |
+
+<Tip>
+  High-confidence drafts are generally safe to send with minimal editing. For medium and low-confidence drafts, always review the full response before sending.
+</Tip>
+
+## Editing Drafts
+
+Before sending a draft, you can edit it directly in Botric:
+
+1. Open the draft by clicking on it.
+2. Edit the response text in the editor.
+3. Click **Send** to deliver the response, or **Save** to keep your edits without sending.
+
+{/* IMAGE: Draft editing interface */}
+
+### Editing Tips
+
+- **Correct inaccuracies** — If the AI used outdated or incorrect information, update the response before sending.
+- **Add personal touches** — Include customer-specific details the AI may not have access to.
+- **Adjust tone** — Modify the language to match the situation (e.g., more empathetic for complaints).
+
+## Improving Draft Quality
+
+If you notice that drafts consistently miss the mark, there are several ways to improve the quality of AI-generated responses:
+
+### Add More Knowledge Sources
+
+The AI can only respond with information it has access to. Adding more [Knowledge Sources](/engagement/knowledge-source) — such as detailed FAQs, product documentation, or support articles — gives the AI more context to work with.
+
+### Refine Your Prompts
+
+Review the system prompts configured during [onboarding](/getting-started/onboarding) or in your agent settings. Clear, specific instructions help the AI generate better responses.
+
+### Review Low-Confidence Drafts
+
+Low-confidence drafts often highlight gaps in your knowledge base. If the AI couldn't find relevant information for a common question, add that information as a new knowledge source.
+
+<Note>
+  The Email Agent uses the same knowledge sources as your [Chat Agent](/engagement/chat-agent/overview). Improving your knowledge base benefits both agents.
+</Note>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Connect Mailbox" icon="plug" href="/engagement/email-agent/connect-mailbox">
+    Add or manage email connections.
+  </Card>
+  <Card title="Knowledge Sources" icon="database" href="/engagement/knowledge-source">
+    Add more data for better AI responses.
+  </Card>
+  <Card title="Email Agent Overview" icon="envelope" href="/engagement/email-agent/overview">
+    Return to the Email Agent overview.
+  </Card>
+  <Card title="Chat Agent" icon="robot" href="/engagement/chat-agent/overview">
+    Set up a chatbot alongside your email agent.
+  </Card>
+</CardGroup>

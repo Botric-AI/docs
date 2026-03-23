@@ -1,0 +1,141 @@
+---
+title: Deploy Your Bot
+description: Get the embed code and add your Chat Agent to your website.
+icon: code
+---
+
+Once you've created and customized your bot, the final step is deploying it on your website. Botric provides an embed code that you add to your site's HTML to display the chat widget.
+
+## Getting the Embed Code
+
+<Steps>
+  <Step title="Open your bot">
+    Go to **Engagement > Chat Agent** and click on the bot you want to deploy.
+  </Step>
+  <Step title="Navigate to Deploy">
+    Click the **Deploy** or **Embed** tab in your bot's settings.
+  </Step>
+  <Step title="Copy the embed code">
+    Click **Copy Code** to copy the embed snippet to your clipboard.
+
+    The embed code looks similar to this:
+
+    ```html
+    <!-- Botric Chat Widget -->
+    <script
+      src="https://widget.botric.ai/chat.js"
+      data-bot-id="YOUR_BOT_ID"
+      async
+    ></script>
+    ```
+
+    {/* IMAGE: Embed code section with copy button */}
+  </Step>
+</Steps>
+
+## Installation
+
+<Tabs>
+  <Tab title="HTML">
+    Paste the embed code just before the closing `</body>` tag in your HTML:
+
+    ```html
+    <html>
+      <head>
+        <!-- your head content -->
+      </head>
+      <body>
+        <!-- your page content -->
+
+        <!-- Botric Chat Widget -->
+        <script
+          src="https://widget.botric.ai/chat.js"
+          data-bot-id="YOUR_BOT_ID"
+          async
+        ></script>
+      </body>
+    </html>
+    ```
+  </Tab>
+  <Tab title="React / Next.js">
+    Add the script to your root layout or `_app` component using the `Script` component:
+
+    ```jsx
+    import Script from 'next/script';
+
+    export default function RootLayout({ children }) {
+      return (
+        <html>
+          <body>
+            {children}
+            <Script
+              src="https://widget.botric.ai/chat.js"
+              data-bot-id="YOUR_BOT_ID"
+              strategy="afterInteractive"
+            />
+          </body>
+        </html>
+      );
+    }
+    ```
+  </Tab>
+  <Tab title="WordPress">
+    1. Go to **Appearance > Theme Editor** or use a plugin like **Insert Headers and Footers**.
+    2. Paste the embed code in the footer section, just before `</body>`.
+    3. Save your changes.
+
+    Alternatively, add the snippet via a custom HTML widget or block.
+  </Tab>
+</Tabs>
+
+## Verifying Deployment
+
+After adding the embed code:
+
+1. Visit your website in a browser.
+2. Look for the chat bubble icon in the bottom-right corner.
+3. Click the bubble to open the widget and send a test message.
+4. Verify the bot responds using your configured knowledge sources.
+
+{/* IMAGE: Chat widget visible on a website */}
+
+<Tip>
+  Open your browser's developer console (F12) and check for any errors if the widget doesn't appear. Common issues include script blocking by ad blockers or content security policies.
+</Tip>
+
+## Troubleshooting
+
+<Accordion title="Widget doesn't appear">
+  - Verify the embed code is placed before `</body>`, not inside `<head>`.
+  - Check that the `data-bot-id` value matches your bot's ID.
+  - Disable ad blockers or browser extensions that may block third-party scripts.
+  - Ensure your site's Content Security Policy (CSP) allows scripts from `widget.botric.ai`.
+</Accordion>
+
+<Accordion title="Bot doesn't respond">
+  - Confirm your bot has at least one [Knowledge Source](/engagement/knowledge-source) linked.
+  - Check that the knowledge source has been fully crawled and indexed.
+  - Test the bot in Botric's built-in preview before checking the live widget.
+</Accordion>
+
+<Accordion title="Widget styling looks wrong">
+  - Your site's CSS may conflict with the widget. The widget uses an iframe to isolate styles, but some global styles can still affect the bubble icon.
+  - Re-check your [widget customization](/engagement/chat-agent/customize-widget) settings.
+</Accordion>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Customize Widget" icon="palette" href="/engagement/chat-agent/customize-widget">
+    Adjust the widget's appearance.
+  </Card>
+  <Card title="View Leads" icon="user-plus" href="/conversion/leads">
+    See leads captured by your bot.
+  </Card>
+  <Card title="Knowledge Sources" icon="database" href="/engagement/knowledge-source">
+    Manage what your bot knows.
+  </Card>
+  <Card title="Chat Agent Overview" icon="robot" href="/engagement/chat-agent/overview">
+    Return to Chat Agent overview.
+  </Card>
+</CardGroup>

@@ -1,0 +1,82 @@
+---
+title: Manage Admins
+description: Invite team members, manage admin users, and control access to your Botric workspace.
+icon: users-gear
+---
+
+The Manage Admins page lets you invite team members to your workspace, manage existing admin users, and control who has access to your Botric account.
+
+{/* IMAGE: Manage Admins page showing admin list */}
+
+## Inviting Admins
+
+<Steps>
+  <Step title="Navigate to Manage Admins">
+    Go to **Settings > Manage Admins** in the sidebar.
+  </Step>
+  <Step title="Click Invite Admin">
+    Click the **Invite Admin** button at the top of the page.
+  </Step>
+  <Step title="Enter email address">
+    Enter the email address of the person you want to invite. They will receive an email invitation with a link to join your workspace.
+  </Step>
+  <Step title="Send invitation">
+    Click **Send Invite**. The invited user appears in the admin list with a **Pending** status until they accept.
+  </Step>
+</Steps>
+
+<Note>
+  Invited users must create a Botric account (or sign in with an existing one) to accept the invitation.
+</Note>
+
+## Admin List
+
+The admin list shows all users with access to your workspace:
+
+| Column | Description |
+|--------|-------------|
+| **Name** | The admin's display name |
+| **Email** | Their email address |
+| **Role** | Their permission level |
+| **Status** | Active or Pending (awaiting acceptance) |
+| **Joined** | When they joined the workspace |
+
+{/* IMAGE: Admin list with status indicators */}
+
+## Removing Admins
+
+To remove an admin from your workspace:
+
+1. Find the admin in the list.
+2. Click the **Remove** button next to their name.
+3. Confirm the removal.
+
+<Warning>
+  Removing an admin revokes their access to the workspace immediately. They will no longer be able to view or manage any resources in this workspace.
+</Warning>
+
+## Permissions Overview
+
+Admin users have full access to the workspace including:
+
+- Viewing and managing all agents (Chat and Email)
+- Accessing leads, calls, tickets, and logs
+- Modifying knowledge sources
+- Updating workspace settings
+- Inviting and removing other admins
+- Viewing billing and plan information
+
+<Note>
+  All admins currently share the same permission level. Granular role-based access controls may be available in a future update.
+</Note>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Profile & Organization" icon="user" href="/settings/profile">
+    Update your personal and organization settings.
+  </Card>
+  <Card title="Integrations" icon="puzzle-piece" href="/settings/integrations">
+    Connect external tools and services.
+  </Card>
+</CardGroup>

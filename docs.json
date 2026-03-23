@@ -14,22 +14,70 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Getting Started",
             "pages": [
               "introduction",
-              "quickstart",
-              "development"
+              "getting-started/quickstart",
+              "getting-started/onboarding",
+              "getting-started/dashboard"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Discovery",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "discovery/site-audit",
+              {
+                "group": "GEO Agent",
+                "pages": [
+                  "discovery/geo-agent/overview",
+                  "discovery/geo-agent/intent-analysis",
+                  "discovery/geo-agent/competitor-analysis",
+                  "discovery/geo-agent/reports"
+                ]
+              },
+              "discovery/seo-agent",
+              "discovery/content-agent"
+            ]
+          },
+          {
+            "group": "Engagement",
+            "pages": [
+              {
+                "group": "Chat Agent",
+                "pages": [
+                  "engagement/chat-agent/overview",
+                  "engagement/chat-agent/create-bot",
+                  "engagement/chat-agent/customize-widget",
+                  "engagement/chat-agent/deploy"
+                ]
+              },
+              {
+                "group": "Email Agent",
+                "pages": [
+                  "engagement/email-agent/overview",
+                  "engagement/email-agent/connect-mailbox",
+                  "engagement/email-agent/drafts-and-confidence"
+                ]
+              },
+              "engagement/knowledge-source"
+            ]
+          },
+          {
+            "group": "Conversion",
+            "pages": [
+              "conversion/leads",
+              "conversion/calls",
+              "conversion/tickets",
+              "conversion/logs"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              "settings/profile",
+              "settings/manage-admins",
+              "settings/integrations",
+              "settings/plans-and-billing"
             ]
           }
         ]
@@ -38,19 +86,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Dashboard",
-          "href": "https://dashboard.mintlify.com/",
-          "icon": "house"
+          "anchor": "App",
+          "href": "https://app.botric.ai",
+          "icon": "browser"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Support",
+          "href": "mailto:support@botric.ai",
+          "icon": "envelope"
         }
       ]
     }
@@ -62,16 +105,16 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "App",
+        "href": "https://app.botric.ai"
       }
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/BotricAI",
+      "linkedin": "https://www.linkedin.com/company/botric-ai",
+      "website": "https://botric.ai"
     }
   }
 }

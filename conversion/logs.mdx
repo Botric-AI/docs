@@ -1,0 +1,94 @@
+---
+title: Logs
+description: View activity and event logs to track agent interactions, system events, and troubleshoot issues.
+icon: scroll
+---
+
+The Logs page provides a detailed record of all activity across your workspace. Every significant event — from agent interactions to system operations — is logged here, giving you full visibility into what's happening in your Botric account.
+
+{/* IMAGE: Logs page showing activity feed */}
+
+## What Gets Logged
+
+Botric captures logs for a wide range of events across your workspace:
+
+| Event Category | Examples |
+|---------------|----------|
+| **Agent Activity** | Chat conversations started/ended, email drafts generated, bot responses |
+| **Lead Events** | New lead captured, lead data updated |
+| **System Events** | Knowledge source crawled, site audit completed, webhook triggered |
+| **User Actions** | Settings changed, bot created/updated, knowledge source added |
+| **Errors** | Failed API calls, crawl errors, processing failures |
+
+## Viewing Logs
+
+The logs page displays events in reverse chronological order (newest first). Each log entry shows:
+
+- **Timestamp** — Exact date and time of the event
+- **Event Type** — Category of the event (agent, system, user, error)
+- **Description** — What happened
+- **Agent/Source** — Which agent or system component generated the event
+- **Details** — Additional context or data associated with the event
+
+{/* IMAGE: Log entry with expanded details */}
+
+## Filtering Logs
+
+Use the filter controls to find specific events:
+
+### By Agent
+
+Select a specific agent (Chat Agent, Email Agent) to see only events related to that agent.
+
+### By Event Type
+
+Filter by event category to focus on specific types of activity:
+
+- Agent activity
+- Lead events
+- System events
+- User actions
+- Errors
+
+### By Date Range
+
+Set a start and end date to narrow logs to a specific time period. This is useful for investigating issues that occurred at a known time.
+
+{/* IMAGE: Log filter controls */}
+
+## Using Logs for Debugging
+
+Logs are especially useful when troubleshooting issues:
+
+<Accordion title="Bot not responding correctly">
+  Filter logs by **Agent Activity** and check the bot's recent conversations. Look for error entries that indicate knowledge source issues or prompt failures.
+</Accordion>
+
+<Accordion title="Knowledge source not updating">
+  Filter by **System Events** and look for crawl or processing entries. Check if the crawl completed successfully or if errors were logged.
+</Accordion>
+
+<Accordion title="Missing leads">
+  Filter by **Lead Events** to verify whether leads were captured. If conversation logs show visitor info was provided but no lead was created, there may be a configuration issue with your bot.
+</Accordion>
+
+<Tip>
+  Check the logs regularly, especially after making changes to your bots or knowledge sources. They're the fastest way to verify that everything is working as expected.
+</Tip>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Leads" icon="user-plus" href="/conversion/leads">
+    View captured leads.
+  </Card>
+  <Card title="Tickets" icon="ticket" href="/conversion/tickets">
+    Manage support tickets.
+  </Card>
+  <Card title="Dashboard" icon="gauge" href="/getting-started/dashboard">
+    Return to your dashboard.
+  </Card>
+  <Card title="Chat Agent" icon="robot" href="/engagement/chat-agent/overview">
+    Review your chat agent configuration.
+  </Card>
+</CardGroup>
