@@ -1,0 +1,88 @@
+---
+title: Create a Bot
+description: Step-by-step guide to creating and configuring a new Chat Agent bot.
+icon: plus
+---
+
+Creating a bot in Botric takes just a few minutes. Follow this guide to set up a new chat agent, configure its behavior, and connect it to your knowledge sources.
+
+## Create a New Bot
+
+<Steps>
+  <Step title="Navigate to Chat Agent">
+    Open the **Engagement** section in the sidebar and click **Chat Agent**.
+  </Step>
+  <Step title="Click Create Bot">
+    Click the **Create Bot** button in the top-right corner of the Chat Agent page.
+  </Step>
+  <Step title="Name your bot">
+    Give your bot a descriptive name (e.g., "Website Support Bot" or "Sales Assistant"). This name is for your internal reference — visitors won't see it by default.
+  </Step>
+  <Step title="Select a purpose">
+    Choose the purpose that best matches your bot's role. The purpose determines the default system prompt and behavior:
+
+    - **Customer Support** — Answer questions and resolve issues
+    - **FAQ** — Handle frequently asked questions
+    - **Lead Generation** — Engage visitors and capture contact info
+    - **Sales** — Guide customers through products and pricing
+    - **Onboarding** — Help new users get started
+    - **Help Desk** — Provide technical troubleshooting
+    - **Custom** — Define your own behavior from scratch
+  </Step>
+  <Step title="Configure prompts">
+    Customize the prompts that control your bot's behavior:
+
+    - **System Prompt** — Instructions that define the bot's role, tone, and boundaries. This is prepended to every conversation.
+    - **Welcome Message** — The first message displayed when a visitor opens the chat widget.
+    - **Fallback Response** — What the bot says when it doesn't have enough information to answer.
+
+    {/* IMAGE: Bot prompt configuration form */}
+  </Step>
+  <Step title="Link knowledge sources">
+    Select which [Knowledge Sources](/engagement/knowledge-source) the bot should use to answer questions. You can link:
+
+    - Website crawl data from your onboarding
+    - Uploaded documents and files
+    - FAQ entries
+    - Audio and video transcripts
+
+    <Warning>
+      A bot without knowledge sources can only respond based on its system prompt. Link at least one source for the best results.
+    </Warning>
+  </Step>
+  <Step title="Save">
+    Click **Save** to create your bot. It's now ready to be [customized](/engagement/chat-agent/customize-widget) and [deployed](/engagement/chat-agent/deploy).
+  </Step>
+</Steps>
+
+## Editing a Bot
+
+To update an existing bot:
+
+1. Go to **Engagement > Chat Agent**.
+2. Click on the bot you want to edit.
+3. Update any configuration — name, purpose, prompts, or knowledge sources.
+4. Click **Save** to apply your changes.
+
+<Note>
+  Changes to prompts and knowledge sources take effect immediately for new conversations. Active conversations continue with the previous configuration.
+</Note>
+
+## Deleting a Bot
+
+To delete a bot, open its settings and click **Delete Bot** at the bottom of the page. This action is permanent and removes the bot along with its configuration.
+
+<Warning>
+  Deleting a bot does not delete the knowledge sources linked to it. Those remain available for other bots.
+</Warning>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Customize Widget" icon="palette" href="/engagement/chat-agent/customize-widget">
+    Design how your chat widget looks.
+  </Card>
+  <Card title="Deploy" icon="code" href="/engagement/chat-agent/deploy">
+    Add the bot to your website.
+  </Card>
+</CardGroup>

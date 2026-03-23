@@ -1,0 +1,102 @@
+---
+title: Connect Mailbox
+description: Connect your Gmail or Zoho email account to the Email Agent via OAuth.
+icon: plug
+---
+
+To use the Email Agent, you need to connect at least one email mailbox. Botric supports Gmail and Zoho Mail, and uses secure OAuth authentication — your email password is never stored.
+
+## Connecting a Mailbox
+
+<Steps>
+  <Step title="Navigate to Email Agent">
+    Open the **Engagement** section in the sidebar and click **Email Agent**.
+  </Step>
+  <Step title="Click Connect Mailbox">
+    Click the **Connect Mailbox** button to begin the setup process.
+  </Step>
+  <Step title="Select your provider">
+    Choose your email provider:
+
+    <Tabs>
+      <Tab title="Gmail">
+        1. Click **Connect Gmail**.
+        2. You are redirected to Google's OAuth consent screen.
+        3. Sign in with the Google account you want to connect.
+        4. Review the permissions Botric requests and click **Allow**.
+        5. You are redirected back to Botric with your mailbox connected.
+
+        {/* IMAGE: Google OAuth consent screen */}
+
+        <Note>
+          Botric requests read and send permissions for your Gmail account. Emails are only accessed to generate AI drafts — Botric does not modify or delete your emails.
+        </Note>
+      </Tab>
+      <Tab title="Zoho">
+        1. Click **Connect Zoho**.
+        2. You are redirected to Zoho's OAuth consent screen.
+        3. Sign in with your Zoho account.
+        4. Approve the requested permissions.
+        5. You are redirected back to Botric with your mailbox connected.
+
+        {/* IMAGE: Zoho OAuth consent screen */}
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Verify connection">
+    Once connected, your mailbox appears in the Email Agent with a **Connected** status badge. Botric begins monitoring for incoming emails.
+  </Step>
+</Steps>
+
+## Managing Connections
+
+### Viewing Connected Mailboxes
+
+All connected mailboxes are listed on the Email Agent page. For each mailbox, you can see:
+
+- Email address
+- Provider (Gmail or Zoho)
+- Connection status
+- Last sync time
+
+### Disconnecting a Mailbox
+
+To disconnect a mailbox:
+
+1. Go to **Engagement > Email Agent**.
+2. Find the mailbox you want to disconnect.
+3. Click the **Disconnect** button.
+4. Confirm the disconnection.
+
+<Warning>
+  Disconnecting a mailbox stops the Email Agent from monitoring that inbox. Any pending drafts for that mailbox remain available but no new drafts are generated.
+</Warning>
+
+### Reconnecting
+
+If a connection expires or is revoked, you'll see a **Reconnect** prompt next to the affected mailbox. Click it to re-authenticate through OAuth.
+
+## Troubleshooting
+
+<Accordion title="OAuth connection fails">
+  - Make sure you're signed into the correct Google or Zoho account.
+  - Check that you haven't blocked pop-ups — the OAuth flow opens in a new window.
+  - If using Google Workspace, your admin may need to approve the Botric app.
+</Accordion>
+
+<Accordion title="Emails aren't being monitored">
+  - Verify the mailbox shows a **Connected** status on the Email Agent page.
+  - Check the last sync time — if it's stale, try disconnecting and reconnecting.
+  - Ensure the connected account has incoming emails in the inbox (not filtered to other folders).
+</Accordion>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Drafts & Confidence" icon="file-pen" href="/engagement/email-agent/drafts-and-confidence">
+    Review AI-generated email drafts.
+  </Card>
+  <Card title="Email Agent Overview" icon="envelope" href="/engagement/email-agent/overview">
+    Return to the Email Agent overview.
+  </Card>
+</CardGroup>

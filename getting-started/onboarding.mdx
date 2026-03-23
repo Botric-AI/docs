@@ -1,0 +1,85 @@
+---
+title: Onboarding Wizard
+description: Walk through the 5-step onboarding wizard to configure your workspace and launch your first audit.
+icon: wand-magic-sparkles
+---
+
+When you create a new workspace, Botric guides you through a five-step onboarding wizard. Each step helps configure your workspace so the platform can accurately audit your site, power your AI agents, and match your brand identity.
+
+{/* IMAGE: Onboarding wizard progress bar showing all 5 steps */}
+
+## Step 1: Website URL
+
+Enter the URL of the website you want to audit and monitor. Botric uses this as the starting point for crawling your site, analyzing its health, and building knowledge for your AI agents.
+
+- Enter the full URL including `https://` (e.g., `https://example.com`).
+- Botric validates the URL and begins initial discovery in the background.
+
+{/* IMAGE: Step 1 - Website URL input field */}
+
+## Step 2: Brand Details
+
+Provide your brand information so Botric can tailor its AI agents to match your identity.
+
+- **Brand Name** — Your company or product name as it should appear in AI conversations.
+- **Brand Description** — A short description of what your business does. This helps the AI understand your context and respond accurately.
+- **Brand Logo** — Upload your logo for use in the chat widget and reports.
+
+<Tip>
+  Write a clear, specific brand description. The more context you provide, the better your AI agents perform in conversations.
+</Tip>
+
+{/* IMAGE: Step 2 - Brand details form */}
+
+## Step 3: Define Prompts
+
+Configure the core prompts that shape how your AI agents behave. These prompts set the tone, scope, and personality of your chatbot and email responses.
+
+- **System Prompt** — Define the role and behavior of your AI (e.g., "You are a helpful customer support agent for Acme Corp").
+- **Welcome Message** — The first message visitors see when the chat widget opens.
+- **Fallback Response** — What the AI says when it cannot answer a question.
+
+{/* IMAGE: Step 3 - Prompts configuration */}
+
+## Step 4: Select Links
+
+Choose which pages from your website should be included in the AI agent's knowledge base. Botric presents a list of discovered pages from your site.
+
+- **Select All** to include your entire site, or pick specific pages.
+- Selected pages are crawled and indexed as a [Knowledge Source](/engagement/knowledge-source) for your agents.
+- You can add, remove, or update knowledge sources later.
+
+{/* IMAGE: Step 4 - Link selection interface */}
+
+## Step 5: Complete
+
+Review your configuration and finalize the setup. When you click **Complete**:
+
+- Botric triggers a full [Site Audit](/discovery/site-audit) of your website.
+- Your selected pages are crawled and added as a knowledge source.
+- You are redirected to the [Dashboard](/getting-started/dashboard) where you can track progress.
+
+{/* IMAGE: Step 5 - Completion confirmation screen */}
+
+<Note>
+  The initial site audit and knowledge source crawl may take a few minutes depending on the size of your website. You can continue exploring the platform while they run.
+</Note>
+
+## What's Next?
+
+After completing onboarding, here's what you should do:
+
+<CardGroup cols={2}>
+  <Card title="View Your Dashboard" icon="gauge" href="/getting-started/dashboard">
+    Check your site health score and audit results.
+  </Card>
+  <Card title="Create a Chat Agent" icon="robot" href="/engagement/chat-agent/overview">
+    Build an AI chatbot for your website.
+  </Card>
+  <Card title="Run a GEO Analysis" icon="earth-americas" href="/discovery/geo-agent/overview">
+    Discover how visible your site is in AI search.
+  </Card>
+  <Card title="Add Knowledge Sources" icon="database" href="/engagement/knowledge-source">
+    Expand what your AI agents know.
+  </Card>
+</CardGroup>

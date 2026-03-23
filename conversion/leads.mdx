@@ -1,0 +1,93 @@
+---
+title: Leads
+description: View and manage leads captured by your AI agents from chat conversations and form submissions.
+icon: user-plus
+---
+
+The Leads page shows all contacts captured by your AI agents. When a visitor interacts with your [Chat Agent](/engagement/chat-agent/overview) and provides their contact information, Botric automatically creates a lead record with their details and conversation history.
+
+{/* IMAGE: Leads table view showing captured leads */}
+
+## How Leads Are Captured
+
+Leads are created automatically when a chat visitor provides their contact information during a conversation. The typical flow:
+
+1. A visitor opens your chat widget and starts a conversation.
+2. The Chat Agent engages the visitor based on its purpose (support, lead gen, sales, etc.).
+3. The visitor provides their name, email, or other contact details.
+4. Botric creates a lead record and stores the conversation history.
+
+<Note>
+  Lead capture depends on your bot's purpose and prompts. Bots configured for **Lead Generation** or **Sales** are optimized to collect visitor information naturally during conversations.
+</Note>
+
+## Leads Table
+
+The leads table provides a comprehensive view of all captured leads with search, filtering, and pagination.
+
+### Columns
+
+| Column | Description |
+|--------|-------------|
+| **Name** | The visitor's name (if provided) |
+| **Email** | The visitor's email address |
+| **Source** | Which bot or agent captured the lead |
+| **Date** | When the lead was captured |
+| **Status** | Current lead status |
+
+### Search and Filter
+
+- **Search** — Find leads by name, email, or any captured field.
+- **Filter by source** — Show leads from a specific bot or agent.
+- **Filter by date** — Narrow results to a specific time range.
+- **Pagination** — Navigate through large lead lists with page controls.
+
+{/* IMAGE: Leads table with search and filter controls */}
+
+## Lead Details
+
+Click on any lead to open its detail view. The lead detail page shows:
+
+### Contact Information
+
+All form data captured during the conversation, including:
+
+- Name
+- Email address
+- Phone number (if provided)
+- Company name (if provided)
+- Any custom fields collected by the bot
+
+### Conversation History
+
+The full chat transcript between the visitor and your bot. This gives you context about what the lead was interested in, what questions they asked, and how the conversation went.
+
+{/* IMAGE: Lead detail view showing contact info and conversation */}
+
+<Tip>
+  Review conversation histories before following up with leads. Understanding what a lead discussed with your bot helps you personalize your outreach.
+</Tip>
+
+## Exporting Leads
+
+Export your leads for use in external CRM systems, email marketing tools, or spreadsheets.
+
+- Click **Export** to download your leads as a CSV file.
+- Use filters before exporting to narrow the export to specific leads.
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Chat Agent" icon="robot" href="/engagement/chat-agent/overview">
+    Configure your bot for better lead capture.
+  </Card>
+  <Card title="Calls" icon="phone" href="/conversion/calls">
+    View call logs and transcripts.
+  </Card>
+  <Card title="Tickets" icon="ticket" href="/conversion/tickets">
+    Manage support tickets.
+  </Card>
+  <Card title="Integrations" icon="puzzle-piece" href="/settings/integrations">
+    Connect your CRM for lead syncing.
+  </Card>
+</CardGroup>

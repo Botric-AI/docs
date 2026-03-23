@@ -1,0 +1,117 @@
+---
+title: Site Audit
+description: Run a comprehensive health check on your website and understand your scores across technical, content, performance, and domain metrics.
+icon: stethoscope
+---
+
+The Site Audit gives you a detailed breakdown of your website's health across multiple dimensions. Botric crawls your site, evaluates key factors, and assigns a letter grade so you can quickly identify what's working and what needs attention.
+
+{/* IMAGE: Site Audit overview page showing overall grade */}
+
+## Running an Audit
+
+Your first audit runs automatically when you complete the [Onboarding Wizard](/getting-started/onboarding). You can also trigger a new audit at any time:
+
+<Steps>
+  <Step title="Navigate to Site Audit">
+    Open the **Discovery** section in the sidebar and click **Site Audit**.
+  </Step>
+  <Step title="Start a new audit">
+    Click **Run Audit** to begin a fresh analysis of your website. The audit crawls your site and evaluates it against multiple criteria.
+  </Step>
+  <Step title="Review results">
+    Once complete, your results are displayed with an overall grade and detailed breakdowns by category.
+  </Step>
+</Steps>
+
+<Note>
+  Audits may take a few minutes depending on the size of your website. You can navigate away and come back — results are saved automatically.
+</Note>
+
+## Understanding Grades
+
+Botric assigns a letter grade based on your overall audit score. Each grade maps to a score range and is color-coded for quick reference.
+
+| Grade | Score Range | Color | Meaning |
+|-------|-------------|-------|---------|
+| **A** | 90–100 | Blue | Excellent — your site is in great shape |
+| **B** | 80–89 | Green | Good — minor improvements recommended |
+| **C** | 70–79 | Orange | Fair — several areas need attention |
+| **D** | 60–69 | Red | Poor — significant issues detected |
+| **F** | Below 60 | Red | Critical — immediate action required |
+
+{/* IMAGE: Grade scale visual with color coding */}
+
+## Report Sections
+
+The audit report is broken down into four main sections, each with its own score and detailed findings.
+
+### Technical Health
+
+Evaluates the technical foundation of your website:
+
+- **SSL/HTTPS** — Is your site served over a secure connection?
+- **Mobile Responsiveness** — Does your site render correctly on mobile devices?
+- **Broken Links** — Are there any dead links on your site?
+- **Page Speed** — How quickly do your pages load?
+- **Structured Data** — Is your markup properly configured for search engines?
+- **Crawlability** — Can search engines and AI bots access your content?
+
+### Content Quality
+
+Analyzes the quality and structure of your website content:
+
+- **Meta Tags** — Are title tags and meta descriptions present and optimized?
+- **Heading Structure** — Do your pages use a proper heading hierarchy (H1, H2, etc.)?
+- **Content Length** — Do your pages have sufficient content?
+- **Alt Text** — Do images have descriptive alt attributes?
+- **Duplicate Content** — Are there pages with duplicated or thin content?
+
+### Performance
+
+Measures how fast and responsive your site is:
+
+- **Page Load Time** — Average time to fully load your pages.
+- **Core Web Vitals** — Key performance metrics (LCP, FID, CLS).
+- **Asset Optimization** — Are images, scripts, and stylesheets optimized?
+- **Server Response Time** — How quickly does your server respond to requests?
+
+### Domain Analytics
+
+Provides insights about your domain's authority and reputation:
+
+- **Domain Age** — How long your domain has been registered.
+- **Backlink Profile** — Overview of sites linking to yours.
+- **Domain Authority** — Estimated authority score based on link profile.
+- **Social Signals** — Presence across social media platforms.
+
+{/* IMAGE: Report sections with expandable details */}
+
+## Acting on Results
+
+Each finding in the report includes:
+
+- A **status indicator** (pass, warning, or fail)
+- A **description** of what was checked
+- **Recommendations** for how to fix issues
+
+<Tip>
+  Focus on fixing red (failing) items first. These have the biggest impact on your site's overall health and search visibility.
+</Tip>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="GEO Agent" icon="earth-americas" href="/discovery/geo-agent/overview">
+    Check your AI search visibility.
+  </Card>
+  <Card title="Chat Agent" icon="robot" href="/engagement/chat-agent/overview">
+    Build an AI chatbot for your website.
+  </Card>
+  <Card title="Knowledge Sources" icon="database" href="/engagement/knowledge-source">
+    Feed your audit data into your AI agents.
+  </Card>
+  <Card title="Dashboard" icon="gauge" href="/getting-started/dashboard">
+    Return to your dashboard overview.
+  </Card>
+</CardGroup>
