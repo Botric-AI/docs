@@ -1,0 +1,75 @@
+---
+title: Channels
+description: The tools your chat agent can offer — tickets, leads, support forms, web search, bookings and exit intent.
+icon: plug
+---
+
+Channels turn the agent from something that answers questions into something that does work. Each is toggled on independently and configured in place; the tab header shows how many are active.
+
+{/* IMAGE: Channels tab */}
+
+## Ticket System
+
+Lets visitors create support tickets directly through the chat agent. Set the label the agent uses when offering it.
+
+Tickets land in the **Tickets** tab of [Conversations](/support/conversations).
+
+## Lead Generation
+
+Captures visitor information with a customizable form during the conversation. Build the form from fields of type **text**, **email**, **phone**, **number** or **text area**, each optionally required.
+
+Submissions land in the **Leads** tab of [Conversations](/support/conversations).
+
+<Tip>
+  Ask for as little as you can live with. Every extra required field costs completions — name and email is usually the right trade.
+</Tip>
+
+## Support Form
+
+Receives support form submissions from your own website as leads. Same field types as Lead Generation. Use this when you already have a form on your site and want its submissions to arrive alongside everything else.
+
+## Web Agent
+
+Allows the agent to search specific websites, or the internet, for answers it can't find in your knowledge sources. Configure the URLs it's allowed to consult.
+
+<Note>
+  Web Agent is a fallback, not a substitute for a knowledge base. Answers from your own trained content are more accurate and more consistent.
+</Note>
+
+## Cal.com
+
+Enables visitors to book meetings directly through the chat interface. Configure your Cal.com username, meeting type and event URL.
+
+Bookings land in the **Calls** tab of [Conversations](/support/conversations).
+
+## Exit Intent
+
+Shows a targeted popup when a visitor is about to leave the page. Configure:
+
+| Setting | Purpose |
+| --- | --- |
+| **Message** | Title and subtitle of the popup |
+| **Action** | Either a **form** (your own fields) or **buttons** (label plus URL) |
+| **Max triggers** | How many times one visitor can see it |
+| **Trigger delay** | How long after page load it can fire |
+| **Time threshold** | Minimum time on page before it's eligible |
+| **Edge threshold** | How close to the edge of the viewport the cursor must get |
+
+<Tip>
+  Exit intent is easy to overuse. One trigger per visitor, a delay of at least a few seconds, and an offer worth interrupting for.
+</Tip>
+
+## In development
+
+WhatsApp, Slack and Telegram channels are planned and not yet available.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Conversations" icon="list" href="/support/conversations">
+    Where everything these channels capture arrives.
+  </Card>
+  <Card title="Deploy" icon="code" href="/support/chat-agent/deploy">
+    Put the configured agent live.
+  </Card>
+</CardGroup>

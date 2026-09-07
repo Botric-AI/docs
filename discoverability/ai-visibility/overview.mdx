@@ -1,0 +1,115 @@
+---
+title: AI Visibility overview
+description: How often AI engines name and cite your brand — the GEO score, and everything behind it.
+icon: sparkles
+---
+
+AI Visibility runs your tracked prompts across the AI platforms on your plan, reads every answer, and scores how your brand shows up. It's the core report in Botric.
+
+{/* IMAGE: AI Visibility overview, hero score */}
+
+## Running an analysis
+
+**Run Analysis** starts a scan. The button shows the credit cost before you commit — a run bills for your plan's full tracked-prompt cap plus any add-on prompts, because the tracked set is refilled to the cap on every run.
+
+While it runs, a progress banner reports the stage:
+
+| Stage | What's happening |
+| --- | --- |
+| Identifying questions your customers ask AI | Intent generation |
+| Clustering what your market asks about | Grouping topics |
+| Looking up who else sells what you sell | Finding competitors |
+| Querying your plan's AI engines | Running prompts |
+| Pulling competitor names from AI responses | Identifying competitors in answers |
+| Indexing pages and mapping your content | Content coverage |
+| Mapping every mention back to source domains | Citations |
+| Scoring tone for each mention | Sentiment analysis |
+| Computing share-of-voice across LLMs | Benchmarking |
+| Compiling the final report | Finalising |
+
+The top bar shows **Scanning…**, then **Scan Complete**. If a run fails, the page explains why and offers **Retry Analysis**.
+
+## AI platforms
+
+Depending on your plan, prompts are run across ChatGPT, Gemini, Claude, Perplexity, Copilot, Grok, DeepSeek, Meta AI, Mistral, Poe and Google's AI Overview. Results are broken out per platform throughout the report.
+
+## The GEO score
+
+Your headline number, 0–100, on a gauge.
+
+| Score | Band | What it means |
+| --- | --- | --- |
+| 90–100 | **Excellent** | Highly visible across AI platforms. Keep scanning to hold the position. |
+| 80–89 | **Good** | You show up well. Closing the remaining content gaps pushes you higher. |
+| 70–79 | **Fair** | Needs attention. Targeted content improvements lift mention frequency. |
+| 0–69 | **Needs improvement** | AI platforms rarely surface you. Work the action plan. |
+
+Under the score: the date of the last scan, how many prompts were tested and across how many platforms.
+
+## Tabs
+
+| Tab | Contents |
+| --- | --- |
+| **Overview** | Score, history, competitor charts, citations, priority cards |
+| **Prompts** | Every prompt and how each platform answered it — see [Prompts](/discoverability/ai-visibility/prompts) |
+| **Content Gaps** | Prompts where you lose — see [Content gaps](/discoverability/ai-visibility/content-gaps) |
+| **Recommendations** | Ranked fixes — see [Recommendations & actions](/discoverability/ai-visibility/recommendations) |
+| **Actions** | The prioritised action plan |
+
+## What's on the Overview tab
+
+<AccordionGroup>
+  <Accordion title="Brand perception">
+    Whether the models describe your brand the way you actually position it. Visibility tells you if they mention you; perception tells you whether what they say is *right*.
+
+    - How every engine describes your brand, best understanding first — open a card for the full answer.
+    - Where the models diverge from your [brand profile](/workspace/brand-profile).
+    - Statements that are wrong or missing, ranked by how much they cost your positioning score.
+  </Accordion>
+  <Accordion title="Score history">
+    Your GEO score across every run, so you can tie movements to the work you shipped.
+  </Accordion>
+  <Accordion title="Prompt and mention summary">
+    Prompts tested, AI mentions, mention rate, intents analysed and per-platform statistics.
+  </Accordion>
+  <Accordion title="Priority fixes and critical gaps">
+    The highest-impact recommendations and the most damaging gaps, each with a link to the full tab.
+  </Accordion>
+  <Accordion title="Top competitors">
+    Your GEO score and mentions against your benchmarked competitors, per platform.
+  </Accordion>
+  <Accordion title="Competitor heatmap">
+    You and each competitor scored on every platform in one grid — it makes platform-specific weaknesses obvious.
+  </Accordion>
+  <Accordion title="Top cited sources and citation domains">
+    Which URLs and domains the answers pulled from, including YouTube and Reddit citations, with a link into [Citations](/discoverability/citations).
+  </Accordion>
+  <Accordion title="Report history">
+    Your three most recent runs, with a link to the full history in [Reports](/workspace/reports).
+  </Accordion>
+</AccordionGroup>
+
+## Banners you may see
+
+- **Stale prompts** — you've saved prompts that the latest completed report doesn't reflect yet. Re-run to include them.
+- **Site Audit** — a nudge to run or review the technical audit, since crawlability limits citability.
+- **Fast path** — a shortcut straight to your content gaps or priority fixes when the report finds something urgent.
+
+## Prompt Explorer
+
+**Prompt Explorer** opens the tracked prompt set for the site: which prompts are being run, which slots are add-ons, and which are managed by Botric. The badge shows tracked plus add-on prompts.
+
+<Card title="Prompt Research" icon="telescope" href="/discoverability/prompt-research">
+  Test candidate prompts before spending a tracked slot on them.
+</Card>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Prompts" icon="messages" href="/discoverability/ai-visibility/prompts">
+    Read the actual answers, platform by platform.
+  </Card>
+  <Card title="Content gaps" icon="puzzle-piece" href="/discoverability/ai-visibility/content-gaps">
+    Where a competitor gets cited and you don't.
+  </Card>
+</CardGroup>

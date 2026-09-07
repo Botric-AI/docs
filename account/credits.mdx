@@ -1,0 +1,84 @@
+---
+title: Credits
+description: Your balance, what each feature costs, and how to top up.
+icon: coins
+---
+
+Credits are the currency for every run Botric does on your behalf. **Settings → Credits** shows your balance, your history and the cost of each feature.
+
+Your balance is also always visible as the **credit pill** in the top bar — amber when it's running low, red when it's nearly out.
+
+{/* IMAGE: Credits page */}
+
+## Where credits come from
+
+<CardGroup cols={2}>
+  <Card title="Plan credits" icon="repeat">
+    Granted at the start of each billing cycle and reset when the cycle rolls over. Unused plan credits don't carry forward.
+  </Card>
+  <Card title="Add-on credits" icon="cart-shopping">
+    Bought as packs. They don't expire with the billing cycle, and each purchase is tracked separately.
+  </Card>
+</CardGroup>
+
+Your **total available** is plan credits remaining plus every add-on pack's remaining balance. Plan credits are spent first, so a cycle reset never wastes credits you paid extra for.
+
+## Feature costs
+
+| Feature | Charged |
+| --- | --- |
+| **Site Audit** | Per run |
+| **GEO Agent** | Per prompt |
+| **Chat Agent** | Per 200 messages |
+| **Topic discovery** | 20 credits per run |
+| **Blog generation** | 200 credits per blog |
+| **Prompt Research** | 20 credits per prompt, up to 10 per run |
+| **Creating a workspace** | The combined Site Audit and GEO cost of its first runs |
+
+Current per-unit prices are shown on the Credits page under **Feature costs**, and on the relevant action button before you commit.
+
+<Warning>
+  A GEO run bills your plan's **full tracked-prompt cap plus your add-on prompts** — not just the prompts you can currently see. Botric refills the tracked set to the cap on every run.
+</Warning>
+
+## Transaction history
+
+Every movement, filterable by type:
+
+| Type | Meaning |
+| --- | --- |
+| **Usage** | Credits spent on a run |
+| **Refunds** | Credits returned when a run failed |
+| **Purchases** | Add-on packs bought |
+| **Plan grants** | Credits granted by your plan |
+| **Plan resets** | The cycle rollover |
+| **Plan expiry** | Credits removed when a plan ended |
+
+Each entry shows the feature, the amount, and the balance before and after.
+
+<Note>
+  Failed runs are refunded automatically. A failed blog generation, for example, appears as **Failed · refunded**.
+</Note>
+
+## Running out
+
+When a run would exceed your balance, Botric blocks it before it starts and opens a dialog showing what's required, what's available and the shortfall — broken down by the parts of the run. From there you can buy a pack or upgrade your plan.
+
+## Buying add-on credits
+
+Choose a pack from the credit catalogue and confirm the purchase. Credits are added to your balance and the receipt appears under [Invoices](/account/invoices).
+
+<Tip>
+  If you're consistently topping up every month, the plan with a bigger credit grant is almost always cheaper than repeated packs. Compare on [Plans](/account/plans).
+</Tip>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Credits reference" icon="calculator" href="/reference/credits">
+    Worked examples of what a run costs.
+  </Card>
+  <Card title="Plans" icon="credit-card" href="/account/plans">
+    Credit grants by tier.
+  </Card>
+</CardGroup>

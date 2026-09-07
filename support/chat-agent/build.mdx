@@ -1,0 +1,95 @@
+---
+title: Build & customize
+description: Name your agent, write its messages, theme it to your brand, and connect its knowledge.
+icon: palette
+---
+
+Everything on an agent's **Info & Appearance**, **Knowledge**, **FAQs** and **Settings** tabs. A live preview sits beside the form so you can see changes before saving.
+
+{/* IMAGE: Chat agent Info & Appearance tab */}
+
+## Info & Appearance
+
+### Identity
+
+| Field | Purpose |
+| --- | --- |
+| **Agent name** | Internal name in your agent list |
+| **Display name** | What visitors see in the chat header |
+| **Agent icon** | The avatar in the conversation |
+
+### Conversation
+
+| Field | Purpose |
+| --- | --- |
+| **Welcome message** | The greeting that opens every conversation |
+| **Initial messages** | Additional opening messages |
+| **Placeholder text** | Hint text in the input box |
+| **Suggested questions** | Clickable prompts that give visitors somewhere to start |
+
+<Tip>
+  Suggested questions are the highest-leverage field on this tab. Three good ones raise engagement more than any styling change — use the top questions from your [Conversations logs](/support/conversations).
+</Tip>
+
+### Widget mode
+
+Three ways to present the agent:
+
+| Mode | Behaviour |
+| --- | --- |
+| **Widget** | Floating chat button on every page, opens when clicked |
+| **iframe** | Always-open assistant embedded directly on a page |
+| **Modal** | Opens in a larger window when your own button is clicked |
+
+In modal mode you also set the **button label** (default *Ask AI*) and its colours.
+
+### Theming
+
+- **Brand colour** — the primary accent, pre-filled from your [brand profile](/workspace/brand-profile).
+- **Theme mode** — light or dark.
+- **Widget colours** — header, body, footer, background, user bubble, bot bubble, input box, send button and widget icon, each individually adjustable.
+- **Show branding** — hide the Botric badge on plans that allow custom branding.
+
+### Allowed domains
+
+Restrict where the widget will run. Only the domains you list can embed this agent — worth setting before you go live so nobody else can load your agent on their site.
+
+## Knowledge
+
+Choose which of the workspace's [knowledge sources](/workspace/knowledge-source) this agent reads. Source types are grouped as **Websites**, **Files**, **FAQ**, **Text** and **Audio/Video**.
+
+Banners tell you when something is wrong:
+
+- **Knowledge sources are empty** — nothing to answer from.
+- **Training underway** — indexing in progress.
+- **Some items failed to train** — retry those items.
+
+<Warning>
+  Deploying an agent with no trained knowledge produces an assistant that can't answer anything about your business. Wait for training to complete.
+</Warning>
+
+## FAQs
+
+Once training finishes, Botric generates FAQs from your knowledge sources — usually within 30–60 seconds. The tab shows **Total FAQs** and marks each as **AI generated**.
+
+You can edit, delete or **regenerate** the set. If generation fails, the tab offers a retry.
+
+## Settings
+
+- **Disable chatbot** — take the agent offline without deleting it. The embed stays in place and stops responding.
+- **Danger zone** — **Delete this chat agent**. Permanent, and it takes the agent's data with it.
+
+## Preview and testing
+
+The preview panel renders the chat interface and the website appearance (widget or modal) as you edit. **Open preview** launches a full-page version, and **Copy preview URL** gives you a link to share with a colleague before you deploy.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Channels" icon="plug" href="/support/chat-agent/channels">
+    Tickets, leads, bookings, web search and exit intent.
+  </Card>
+  <Card title="Deploy" icon="code" href="/support/chat-agent/deploy">
+    Put it on your site.
+  </Card>
+</CardGroup>

@@ -1,0 +1,103 @@
+---
+title: Knowledge Source
+description: The content that trains your AI agents — websites, files, FAQs, text, audio and video.
+icon: book-open
+---
+
+A knowledge source is the material your [Chat Agent](/support/chat-agent/overview) answers from. Add your documentation, policies, product pages and FAQs, and the agent answers from your content instead of guessing.
+
+{/* IMAGE: Knowledge Source page */}
+
+## The page at a glance
+
+Four counters sit at the top: **Total items**, **Knowledge sources**, **Training progress** and **Linked agents**. Below them, each source type has its own list.
+
+## Source types
+
+<CardGroup cols={3}>
+  <Card title="Website" icon="globe">
+    Crawl and index a URL.
+  </Card>
+  <Card title="Text" icon="file-lines">
+    Paste text content directly.
+  </Card>
+  <Card title="FAQ" icon="circle-question">
+    Question and answer pairs.
+  </Card>
+  <Card title="File" icon="upload">
+    PDF, DOCX, PPTX, TXT, MD.
+  </Card>
+  <Card title="Audio" icon="file-audio">
+    Audio files, transcribed and indexed.
+  </Card>
+  <Card title="Video" icon="file-video">
+    Video files, transcribed and indexed.
+  </Card>
+</CardGroup>
+
+<Note>
+  **Audio** and **Video** require a plan with video/audio knowledge. On plans without it, those tiles show an upgrade badge.
+</Note>
+
+## Adding a source
+
+<Steps>
+  <Step title="Choose Add item">
+    Pick a source type from the picker.
+  </Step>
+  <Step title="Provide the content">
+    Enter a URL, paste text, write a Q&A pair, or drag files onto the drop zone.
+  </Step>
+  <Step title="Wait for training">
+    Each item is chunked and embedded. Training progress is shown per item; large files and long media take longer.
+  </Step>
+</Steps>
+
+### Websites
+
+Give Botric a URL and it crawls and indexes the page. Use your most authoritative pages — product, pricing, docs, policies.
+
+### FAQs
+
+The most precise source type. If a specific question keeps coming up in [Conversations](/support/conversations), write it as an FAQ and the agent will answer it consistently.
+
+### Files
+
+Drag and drop, or browse. Supported: PDF, DOCX, PPTX, TXT and MD.
+
+## Managing sources
+
+Every list supports **view**, **edit** and **delete**. Deleting an item also removes its embeddings, so the agent stops answering from it immediately.
+
+<Warning>
+  Deleting is permanent. If a chat agent relied on that item, its answers will change on the next question.
+</Warning>
+
+## Linking to a chat agent
+
+Knowledge sources live at the workspace level; a chat agent selects the ones it should use in its **Knowledge** tab. One source can feed several agents.
+
+The chat agent surfaces training state directly:
+
+- **Training underway** — indexing in progress.
+- **Some items failed to train** — retry those items.
+- **Knowledge sources are empty** — the agent has nothing to answer from.
+
+## Auto-generated FAQs
+
+Once training completes, Botric generates FAQs from your knowledge sources — usually in 30–60 seconds. They appear in the chat agent's **FAQs** tab, where you can edit, delete or regenerate them.
+
+<Tip>
+  Feed the knowledge base from real demand. The dashboard's **Most asked questions** card and the Conversations **Logs** tab show exactly which questions your agent couldn't answer.
+</Tip>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Build a Chat Agent" icon="robot" href="/support/chat-agent/build">
+    Attach these sources to an agent.
+  </Card>
+  <Card title="Conversations" icon="list" href="/support/conversations">
+    Find the gaps your knowledge base should close.
+  </Card>
+</CardGroup>

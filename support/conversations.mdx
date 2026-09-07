@@ -1,0 +1,87 @@
+---
+title: Conversations
+description: Every session, ticket, lead and booking your chat agents produced, in one place.
+icon: list
+---
+
+Conversations is the inbox for everything your chat agents generate. Four tabs, one page.
+
+The blue badge on **Conversations** in the sidebar counts what's new in the recent window; each tab carries its own counter.
+
+{/* IMAGE: Conversations page */}
+
+## Logs
+
+Every chat session, newest first — the visitor's questions, the agent's answers, and how the session ended. Sessions are categorised so you can see the shape of demand rather than reading transcripts one by one:
+
+| Category | Meaning |
+| --- | --- |
+| **Support** | A help request |
+| **Knowledge Gap** | The agent had no good answer |
+| **Unclear** | The intent couldn't be determined |
+
+<Tip>
+  Filter to **Knowledge Gap** and read the last ten. That list is your knowledge-base backlog, in priority order, for free.
+</Tip>
+
+## Tickets
+
+Support tickets opened through the agent's [Ticket System channel](/support/chat-agent/channels).
+
+| Status | Meaning |
+| --- | --- |
+| **Open** | Awaiting a response |
+| **In Progress** | Being worked |
+| **Resolved** | Answered |
+| **Closed** | Finished |
+| **Addressed** | Handled outside the ticket |
+
+Tickets carry a priority of **Low**, **Medium** or **High**. Open one to see the full conversation that produced it, the customer's details, and to add an internal comment.
+
+## Leads
+
+Contacts captured by the [Lead Generation](/support/chat-agent/channels) and Support Form channels. Each lead shows the submitted fields, the conversation it came from, and when it arrived.
+
+Open a lead for the full detail view and the session transcript that produced it.
+
+## Calls
+
+Meetings booked through the [Cal.com channel](/support/chat-agent/channels).
+
+| Status | Meaning |
+| --- | --- |
+| **Pending** | Requested, not confirmed |
+| **Tentative** | Provisionally scheduled |
+| **Cancelled** | Called off |
+| **Did Not Happen** | Scheduled but not attended |
+
+Open a call for booking details, customer information and status.
+
+## Source
+
+Entries are tagged with where they came from — **Chatbot** or **Website** — so agent-driven activity is distinguishable from your own site forms.
+
+## New-item badges
+
+Rows created inside the recent activity window are marked as new. The window is set server-side, so the row pills and the sidebar badge always agree.
+
+## Deep links
+
+Each tab is addressable, which makes sharing a specific view easy:
+
+```
+/w/<workspaceId>/engagements/conversations?tab=tickets
+```
+
+## Availability
+
+Conversations is available on the Byte and Infinity plans. On other plans the page shows an upgrade prompt.
+
+<CardGroup cols={2}>
+  <Card title="Agent analytics" icon="chart-simple" href="/support/chat-agent/analytics">
+    The aggregate view of the same activity.
+  </Card>
+  <Card title="Knowledge Source" icon="book-open" href="/workspace/knowledge-source">
+    Close the gaps these conversations expose.
+  </Card>
+</CardGroup>

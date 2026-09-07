@@ -1,0 +1,83 @@
+---
+title: GEO Audit
+description: A readiness check on how citable your site is to AI answer engines.
+icon: gauge-high
+---
+
+Where [Site Audit](/search/site-audit) asks *is this site technically sound?*, GEO Audit asks *is this site something an AI engine would confidently cite?* Different question, different findings.
+
+{/* IMAGE: GEO Audit report */}
+
+## Running it
+
+GEO Audit runs automatically the first time you open the page for a site that's never been audited. After that, **Re-run** starts a fresh scan. A running scan shows live progress; the finished report can be downloaded.
+
+If a workspace has no site yet, the page prompts you to add one first.
+
+## What it scores
+
+The report opens with an overall citability score and a band — **Excellent**, **Strong**, **Fair** or **Needs work** — then breaks the score into sections.
+
+<AccordionGroup>
+  <Accordion title="Technical readiness">
+    The mechanics an answer engine depends on: clean markup, structured data, and content it can parse without executing your application.
+  </Accordion>
+  <Accordion title="AI crawler access">
+    Whether the crawlers behind the major AI platforms are permitted to fetch your pages, and whether anything in your configuration blocks them.
+  </Accordion>
+  <Accordion title="AI platform readiness">
+    How well your content is shaped for the way each platform assembles answers.
+  </Accordion>
+  <Accordion title="Trust stack">
+    The corroborating pages that make a brand safe for a model to cite: an **About page**, **contact information**, a **LinkedIn** presence and similar signals. Models prefer sources they can verify.
+  </Accordion>
+  <Accordion title="Knowledge-graph presence">
+    Whether your brand exists as an entity where models look it up — **Wikipedia**, **Wikidata**, **Crunchbase**. Missing entries are called out with a **Claim listing** action.
+  </Accordion>
+  <Accordion title="Query intent coverage">
+    Which intent types your content covers, shown on a radar chart. Gaps here map directly to prompts you're likely to lose.
+  </Accordion>
+  <Accordion title="Freshness risks">
+    **Content decay** — pages stale enough that a model may prefer a more recently updated source.
+  </Accordion>
+  <Accordion title="Risk flags">
+    Things that actively work against you:
+
+    - **Hallucination bait** — vague or contradictory claims a model may reword into something wrong.
+    - **Keyword stuffing** — patterns that read as manipulation.
+    - **Prompt-injection surface** — page content that could be interpreted as instructions by a model reading it.
+  </Accordion>
+  <Accordion title="Top citability gains">
+    The ranked list of changes that would most improve your citability. Start here.
+  </Accordion>
+</AccordionGroup>
+
+## Using the results
+
+<Steps>
+  <Step title="Clear the blockers">
+    AI crawler access and prompt-injection surface first. Nothing else matters if engines can't or won't read you.
+  </Step>
+  <Step title="Build the trust stack">
+    An About page, real contact details and a knowledge-graph entry are cheap wins with outsized effect.
+  </Step>
+  <Step title="Close intent coverage">
+    Use the radar chart to find the intents you don't answer, then send those to the [Blog Agent](/content/blog-agent).
+  </Step>
+  <Step title="Re-run and compare">
+    Re-run after publishing and watch the band move.
+  </Step>
+</Steps>
+
+## If a scan fails
+
+A network or scan error stops the audit and the page offers **Retry**. A previously completed report stays available in the meantime.
+
+<CardGroup cols={2}>
+  <Card title="AI Visibility (GEO)" icon="sparkles" href="/discoverability/ai-visibility/overview">
+    Readiness is the input; visibility is the outcome.
+  </Card>
+  <Card title="Blog Agent" icon="pen-nib" href="/content/blog-agent">
+    Fill the intent coverage gaps this audit found.
+  </Card>
+</CardGroup>
