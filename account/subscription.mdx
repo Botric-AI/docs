@@ -1,0 +1,66 @@
+---
+title: Subscription
+description: Your plan status, payment method, cancellation and reactivation.
+icon: receipt
+---
+
+**Settings → Subscription** manages the commercial side of your account: what you're paying, when it renews, and the card it's charged to.
+
+{/* IMAGE: Subscription page */}
+
+## Status
+
+The status chip appears in the top bar throughout the app, so you always know where you stand.
+
+| Status | Meaning | Access |
+| --- | --- | --- |
+| **Active** | Subscription is current and paid | Full |
+| **Trial** | Inside a 7-day trial | Full |
+| **Canceled** | Cancellation requested; runs to the end of the period | Full until expiry |
+| **Payment due** | Renewal payment failed after all retries | Restricted — fix payment |
+| **Expired** | Period ended after cancellation, or subscription removed | No paid access |
+
+<Warning>
+  **Payment due** and **Expired** block paid actions — new runs, content generation and workspace creation. Existing reports remain readable.
+</Warning>
+
+## Renewal
+
+The page shows your current period start and end, your billing interval, and the next renewal date. When a cancellation is pending, it shows the date access actually ends.
+
+Plan credits reset at the start of each cycle; the next reset date is shown here and on [Credits](/account/credits).
+
+## Payment methods
+
+Add, replace or remove the card on file. A valid card is required to start a trial and to stay on a paid plan.
+
+<Note>
+  Removing your only card while on a paid plan means the next renewal will fail. Add the replacement before removing the old one.
+</Note>
+
+## Payment failure recovery
+
+If a renewal fails, Stripe retries. Once retries are exhausted the subscription moves to **Payment due** and a recovery banner appears across the app. Update your card and settle the outstanding invoice to restore access.
+
+## Cancelling
+
+**Cancel subscription** stops future renewals. You keep full access until the end of the current paid period, then the subscription expires and access drops to free-tier limits.
+
+## Reactivating
+
+A cancelled subscription can be reactivated before it expires — access simply continues and billing resumes. After expiry, choose a plan again from [Plans](/account/plans).
+
+## Custom plans
+
+If your organization is on a custom plan, this page says so and the standard upgrade flow is replaced by a note to contact us.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Invoices" icon="file-invoice" href="/account/invoices">
+    Download receipts.
+  </Card>
+  <Card title="Contact support" icon="life-ring" href="/account/contact-support">
+    Billing questions.
+  </Card>
+</CardGroup>

@@ -1,0 +1,126 @@
+---
+title: Troubleshooting
+description: Common problems and how to resolve them.
+icon: wrench
+---
+
+## Sign-in
+
+<AccordionGroup>
+  <Accordion title="My verification code didn't arrive">
+    Check spam. Wait for the 30-second cooldown and choose **Resend code**. If it still doesn't arrive, use **Use a different email**, or sign in with Google instead.
+  </Accordion>
+  <Accordion title="The code is rejected">
+    Codes are single-use and short-lived. Request a fresh one rather than retyping the old one.
+  </Accordion>
+  <Accordion title="I'm sent back to sign-in repeatedly">
+    Your session expired. Sign in again. If it keeps happening, clear cookies for `app.botric.ai` and retry.
+  </Accordion>
+</AccordionGroup>
+
+## Onboarding
+
+<AccordionGroup>
+  <Accordion title="Botric couldn't read my website">
+    The brand step retries automatically, and the competitors step has its own retry. If it keeps failing, your site may be blocking crawlers — check that with [Site Audit → AI Crawlability](/search/site-audit) once your workspace exists. You can enter the brand details manually and continue.
+  </Accordion>
+  <Accordion title="No competitors were found">
+    Usually a too-vague brand summary or an unusual niche. Go back to the brand step, sharpen the summary and core topics, and the competitor search will re-run. You can also add competitors manually.
+  </Accordion>
+  <Accordion title="The page list is empty">
+    Botric couldn't crawl internal links. Use the step's **retry**. If your site is a single-page app, confirm a sitemap is published.
+  </Accordion>
+  <Accordion title="I abandoned onboarding at the plans step">
+    Nothing was created — that's deliberate. Start onboarding again from **Add workspace**.
+  </Accordion>
+</AccordionGroup>
+
+## Runs and reports
+
+<AccordionGroup>
+  <Accordion title="A run failed">
+    The page shows the error and a **Retry** control. Failed runs are refunded automatically — check your [credit history](/account/credits) to confirm.
+  </Accordion>
+  <Accordion title="A run has been in progress for a long time">
+    Large sites take longer. The progress banner has a **refresh status** control. Runs continue if you navigate away or close the tab.
+  </Accordion>
+  <Accordion title="My prompts aren't in the latest report">
+    Saved prompts only appear from the next run onward. The overview shows a **stale prompts** banner when this is the case — re-run the analysis.
+  </Accordion>
+  <Accordion title="My GEO score dropped without any change on my side">
+    AI answers shift as models update. Compare two consecutive runs in [Reports](/workspace/reports) to separate model drift from a real regression.
+  </Accordion>
+</AccordionGroup>
+
+## Credits
+
+<AccordionGroup>
+  <Accordion title="A run was blocked for insufficient credits">
+    The dialog shows what's required, what's available and the shortfall. Buy an add-on pack or upgrade. See [How credits work](/reference/credits).
+  </Accordion>
+  <Accordion title="A GEO run cost more than I expected">
+    Runs bill the full tracked-prompt cap plus your add-on prompts, not the visible prompt count. See [the GEO billing rule](/reference/credits).
+  </Accordion>
+  <Accordion title="My credits disappeared at the start of the month">
+    Plan credits reset each billing cycle and don't carry forward. Add-on credits do carry forward — check the split on [Credits](/account/credits).
+  </Accordion>
+</AccordionGroup>
+
+## Chat agent
+
+<AccordionGroup>
+  <Accordion title="The widget doesn't appear on my site">
+    Confirm the domain is listed under **Allowed domains**, that the agent isn't disabled in **Settings**, and that the script tag is present. Check your browser console for errors.
+  </Accordion>
+  <Accordion title="The agent can't answer anything">
+    It has no trained knowledge, or none is linked on its **Knowledge** tab. See [Knowledge Source](/workspace/knowledge-source).
+  </Accordion>
+  <Accordion title="Some knowledge items failed to train">
+    The Knowledge tab flags them. Retry those items; if a file keeps failing, re-save it in a supported format (PDF, DOCX, PPTX, TXT, MD).
+  </Accordion>
+  <Accordion title="FAQ generation failed">
+    The FAQs tab offers **Regenerate**. Generation needs trained knowledge sources — confirm training completed first.
+  </Accordion>
+  <Accordion title="Botric branding is still showing">
+    **Show branding** is a per-agent toggle on **Info & Appearance**, and requires a plan with custom branding.
+  </Accordion>
+</AccordionGroup>
+
+## Integrations
+
+<AccordionGroup>
+  <Accordion title="Search Console connected but no property matched">
+    Botric matches your workspace domain against your verified properties and tells you which domain it looked for. Verify that exact property in Search Console — including the `www` / non-`www` and `http` / `https` variant — then reconnect.
+  </Accordion>
+  <Accordion title="Analytics shows no data">
+    Confirm the GA4 property is selected (a connection can sit pending a property choice), then widen the date range. Panels say explicitly when a period recorded nothing.
+  </Accordion>
+  <Accordion title="An integration tile shows Upgrade">
+    Your plan doesn't include it. Google Analytics shares the Search Console entitlement. See [Plans](/account/plans).
+  </Accordion>
+</AccordionGroup>
+
+## Access and billing
+
+<AccordionGroup>
+  <Accordion title="Paid actions are blocked">
+    Your subscription is **payment due** or **expired**. Update your card and settle the outstanding invoice in [Subscription](/account/subscription).
+  </Accordion>
+  <Accordion title="I can't add a workspace or a team member">
+    You're at your plan's limit. The control links to [Plans](/account/plans) — or shows **Limit reached** if you're already on the top plan.
+  </Accordion>
+  <Accordion title="I can't rename or delete a workspace">
+    Those actions require the owner or admin role. See [Manage admins](/account/manage-admins).
+  </Accordion>
+</AccordionGroup>
+
+## Still stuck?
+
+<CardGroup cols={2}>
+  <Card title="Contact support" icon="life-ring" href="/account/contact-support">
+    Raise a ticket with the workspace, the site and roughly when it happened.
+  </Card>
+  <Card title="Book a walkthrough" icon="calendar" href="https://calendly.com/botric-ai/30min">
+    Thirty minutes with the team.
+  </Card>
+</CardGroup>

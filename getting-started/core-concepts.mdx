@@ -1,0 +1,93 @@
+---
+title: Core concepts
+description: Organizations, workspaces, sites, prompts, agents and credits — and how they relate.
+icon: diagram-project
+---
+
+Six ideas explain almost everything in Botric.
+
+## Organization
+
+Your account boundary. It owns your **plan**, your **credit balance**, your **invoices** and your **team**. Created automatically when you sign up.
+
+Everything billed is billed to the organization, not to a workspace.
+
+## Workspace
+
+One brand, one website. A workspace holds its own brand profile, audits, prompts, content, chat agents and conversations. Your plan sets how many workspaces you can have.
+
+Workspace URLs look like `/w/<workspaceId>/…`. Switching workspaces changes every page in the sidebar.
+
+<Note>
+  Creating a workspace costs credits, because it kicks off a Site Audit and a GEO run. See [How credits work](/reference/credits).
+</Note>
+
+## Site
+
+The domain inside a workspace that gets crawled, audited and tracked. Most workspaces have exactly one. The site carries:
+
+- Your **business profile** — brand name, summary, core topics
+- Your **competitors**
+- Your **target market**
+- Your **tracked prompt set**
+
+## Prompts
+
+The questions Botric asks the AI platforms on your behalf. There are two kinds:
+
+| Type | Who manages it | Behaviour |
+| --- | --- | --- |
+| **Tracked prompts** | Generated and refilled by Botric | The set refills to your plan's cap on every run |
+| **Add-on prompts** | You add them | Fixed slots per site; a paid-plan extra |
+
+Every GEO run bills for the full tracked cap plus your add-on prompts — not just the prompts currently visible.
+
+<Card title="Prompt Research" icon="telescope" href="/discoverability/prompt-research">
+  Test a prompt before you commit a tracked slot to it.
+</Card>
+
+## Reports and runs
+
+A **run** is one execution of an agent; it produces a **report** you can revisit. Reports never overwrite each other — the latest one drives the dashboards, and the full history lives under [Reports](/workspace/reports).
+
+| Agent | Produces |
+| --- | --- |
+| Site Audit | Technical health score, per-page grades, issue list, priority fixes |
+| GEO (AI Visibility) | GEO score, prompt results, citations, competitor benchmark, gaps, actions |
+| GEO Audit | A one-page citability readiness report |
+| Content Agent | Content Brain, topic ideas, blog drafts, page fixes |
+
+## Agents
+
+Botric's agents are the things that do work for you:
+
+- **Site Audit** and **GEO Audit** — measure.
+- **AI Visibility (GEO)** — monitor how AI describes you.
+- **Content Agent** (Blog Agent + Page Agent) — write and fix.
+- **Chat Agent** — talk to your visitors.
+
+## Credits
+
+Runs cost credits. Your balance has two parts:
+
+- **Plan credits** — granted each billing cycle, reset when the cycle rolls over.
+- **Add-on credits** — bought as packs; they don't expire with the cycle.
+
+Add-on credits are consumed after plan credits. When a run would exceed your balance, Botric blocks it and offers to top up.
+
+<Card title="Credits reference" icon="coins" href="/reference/credits">
+  Per-feature costs and how the balance is spent.
+</Card>
+
+## How they fit together
+
+```
+Organization  ──  plan, credits, invoices, team
+   └── Workspace (one brand)
+         ├── Site ── business profile, competitors, tracked prompts
+         │     ├── Site Audit runs
+         │     ├── GEO runs
+         │     └── GEO Audit
+         ├── Knowledge sources ── Chat agents ── Conversations
+         └── Content Brain ── Topics ── Blogs / Page fixes
+```

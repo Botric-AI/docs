@@ -1,32 +1,45 @@
-# Mintlify Starter Kit
+# Botric Documentation
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+The product manual for [Botric](https://botric.ai), published with [Mintlify](https://mintlify.com) at [manual.botric.ai](https://manual.botric.ai).
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+## Structure
 
-### Development
+Navigation mirrors the app's own information architecture, so a page in the docs maps to a page in the product.
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+| Group | Covers |
+| --- | --- |
+| `getting-started/` | Sign-up, onboarding, navigation, core concepts |
+| `workspace/` | Dashboard, Brand Profile, Knowledge Source, Reports, Analytics, Integrations |
+| `search/` | Site Audit, GEO Audit |
+| `discoverability/` | AI Visibility (GEO), Prompt Research, Citations, Competitors |
+| `content/` | Content Brain, Blog Agent, Page Agent |
+| `support/` | Chat Agent, Conversations |
+| `account/` | Profile, Workspaces, Admins, Plans, Subscription, Credits, Invoices, Support |
+| `reference/` | Credits, glossary, troubleshooting |
 
-```
+Navigation is defined in `docs.json`. Adding a page means creating the `.mdx` file **and** registering its path there.
+
+## Local development
+
+```bash
 npm i -g mintlify
-```
-
-Run the following command at the root of your documentation (where docs.json is)
-
-```
 mintlify dev
 ```
 
-### Publishing Changes
+Run from the repository root, where `docs.json` lives.
 
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+## Publishing
 
-#### Troubleshooting
+The Mintlify GitHub app deploys automatically on push to the default branch.
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `docs.json`
+## Conventions
+
+- One page per product screen or per coherent group of tabs.
+- `{/* IMAGE: ... */}` marks a spot where a screenshot belongs.
+- Link between pages with absolute paths (`/workspace/dashboard`).
+- Keep feature descriptions grounded in what the app actually does today; mark unreleased work as coming soon rather than documenting it as available.
+
+## Troubleshooting
+
+- `mintlify dev` not running — run `mintlify install` to reinstall dependencies.
+- A page 404s — check it's registered in `docs.json`.

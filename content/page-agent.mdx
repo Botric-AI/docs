@@ -1,0 +1,71 @@
+---
+title: Page Agent
+description: Generate and apply content fixes for pages your Site Audit already crawled.
+icon: table-cells
+---
+
+Page Agent is the other half of the Content Agent. Instead of writing new pages, it improves the ones you have — working from the issues [Site Audit](/search/site-audit) found on each page.
+
+{/* IMAGE: Page Agent, page list */}
+
+## Requirements
+
+Page Agent needs a **completed Site Audit** for the workspace's site — that's where its list of pages and their issues comes from. Without one, the page directs you to run an audit first.
+
+<Note>
+  Unlike the [Blog Agent](/content/blog-agent), Page Agent doesn't need a built [Content Brain](/content/content-brain). Audit data alone is enough.
+</Note>
+
+## The page list
+
+Every audited page, with its audit score and issue count. Pages with the most to gain sit at the top. **No fixes yet** marks pages you haven't generated for.
+
+## Generating fixes
+
+<Steps>
+  <Step title="Choose a page">
+    Open it from the list.
+  </Step>
+  <Step title="Generate fixes">
+    Botric reads the page's audit findings and its content, then produces specific rewrites and additions.
+  </Step>
+  <Step title="Read the fix report">
+    Each fix explains what's wrong, what to change it to, and why it matters.
+  </Step>
+  <Step title="Apply and re-audit">
+    Make the changes on your site, then re-run the Site Audit to confirm the issues cleared.
+  </Step>
+</Steps>
+
+Generation runs for a minute or two. If it fails, the page offers a retry.
+
+## What fixes look like
+
+Fixes are page-level content changes, not sitewide advice:
+
+- Rewritten titles and meta descriptions
+- Heading structure corrections
+- Missing content sections the page should carry
+- Claims to state explicitly rather than imply
+- Structured-data and entity additions
+
+<Tip>
+  Start with pages that already earn citations or traffic. Improving a page AI engines already read pays back faster than fixing a page nobody reaches.
+</Tip>
+
+## Deep links from Site Audit
+
+Opening Page Agent from a Site Audit page report carries the page through, so you land on that specific page's fixes rather than the list.
+
+## Availability
+
+Page Agent requires a plan that includes the Content Agent.
+
+<CardGroup cols={2}>
+  <Card title="Site Audit" icon="globe" href="/search/site-audit">
+    Where the issue list comes from.
+  </Card>
+  <Card title="GEO Audit" icon="gauge-high" href="/search/geo-audit">
+    Citability findings worth fixing at the page level.
+  </Card>
+</CardGroup>

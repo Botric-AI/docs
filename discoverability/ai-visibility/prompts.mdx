@@ -1,0 +1,77 @@
+---
+title: Prompts
+description: Every tracked prompt, every platform's answer, and whether you were named or cited.
+icon: messages
+---
+
+The **Prompts** tab is the raw evidence behind your GEO score. For each prompt you see what every AI platform actually said, and where you landed.
+
+{/* IMAGE: Prompts tab */}
+
+## The four outcomes
+
+Each prompt/platform pair resolves to one of four states. This is the vocabulary the whole report uses.
+
+| Outcome | Meaning |
+| --- | --- |
+| **Named and cited** | The brand appears in the answer and a brand URL is a source. No gap. |
+| **Named, not cited** | The engine names the brand but sourced the answer elsewhere. **Content gap.** |
+| **Cited, not named** | A brand page is a source but the brand goes unnamed. **Positioning gap.** |
+| **Not mentioned** | Invisible for this prompt — no name in the answer, no brand URL in the sources. |
+
+<Tip>
+  *Named, not cited* is the most fixable state. The model already knows who you are — it just didn't have a page of yours worth quoting. That's a content problem with a clear answer.
+</Tip>
+
+## Filtering
+
+Narrow the list by:
+
+- **Platform** — ChatGPT, Gemini, Claude, Perplexity, Copilot, Grok, DeepSeek, Meta AI, Mistral, Poe, AI Overview.
+- **Outcome** — mentioned, not mentioned, cites you, cites a competitor, cites both, neither.
+- **Intent type** — Informational, Commercial, Comparison, Buyer intent, Branded, Locational, Adjacent, Direct, General.
+
+## Intent types
+
+Every prompt is classified by what the person asking actually wants.
+
+| Intent | Example shape |
+| --- | --- |
+| **Informational** | "What is …" |
+| **Commercial** | "Best tools for …" |
+| **Comparison** | "X vs Y" |
+| **Buyer intent** | "Pricing for …", "How much does … cost" |
+| **Branded** | Prompts naming your brand directly |
+| **Locational** | "… in `<city>`" |
+| **Adjacent** | Neighbouring problems your buyers have |
+| **Direct** | Straightforward product questions |
+
+Coverage across intent types matters as much as raw volume: winning every informational prompt while losing every comparison prompt is a losing position.
+
+## Reading an answer
+
+Open any prompt to see the full response from each platform, the sources it cited, which competitors it named, and the sentiment of your mention. **Draft reply** turns a weak answer into a content brief.
+
+## Managing tracked prompts
+
+Prompt Explorer, reachable from the toolbar, holds the tracked prompt set:
+
+- **Tracked prompts** are generated and refilled by Botric to your plan's cap on every run.
+- **Add-on prompts** are yours — fixed slots per site, available on paid plans. Locked slots show as **Locked**.
+
+<Note>
+  A run bills the full tracked cap plus your add-on prompts, regardless of how many prompts are currently visible. See [How credits work](/reference/credits).
+</Note>
+
+Saved prompts don't appear in results until the next run. When that happens, the overview shows a **stale prompts** banner.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Prompt Research" icon="telescope" href="/discoverability/prompt-research">
+    Trial a prompt before you track it.
+  </Card>
+  <Card title="Content gaps" icon="puzzle-piece" href="/discoverability/ai-visibility/content-gaps">
+    Turn losing prompts into a content plan.
+  </Card>
+</CardGroup>
