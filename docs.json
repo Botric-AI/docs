@@ -14,70 +14,94 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "Get Started",
             "pages": [
               "introduction",
               "getting-started/quickstart",
+              "getting-started/account-setup",
               "getting-started/onboarding",
-              "getting-started/dashboard"
+              "getting-started/navigation",
+              "getting-started/core-concepts"
             ]
           },
           {
-            "group": "Discovery",
+            "group": "Workspace",
             "pages": [
-              "discovery/site-audit",
+              "workspace/dashboard",
+              "workspace/brand-profile",
+              "workspace/knowledge-source",
+              "workspace/reports",
+              "workspace/analytics",
+              "workspace/integrations"
+            ]
+          },
+          {
+            "group": "Search",
+            "pages": [
+              "search/site-audit",
+              "search/geo-audit"
+            ]
+          },
+          {
+            "group": "Discoverability",
+            "pages": [
               {
-                "group": "GEO Agent",
+                "group": "AI Visibility (GEO)",
                 "pages": [
-                  "discovery/geo-agent/overview",
-                  "discovery/geo-agent/intent-analysis",
-                  "discovery/geo-agent/competitor-analysis",
-                  "discovery/geo-agent/reports"
+                  "discoverability/ai-visibility/overview",
+                  "discoverability/ai-visibility/prompts",
+                  "discoverability/ai-visibility/content-gaps",
+                  "discoverability/ai-visibility/recommendations"
                 ]
               },
-              "discovery/seo-agent",
-              "discovery/content-agent"
+              "discoverability/prompt-research",
+              "discoverability/citations",
+              "discoverability/competitors"
             ]
           },
           {
-            "group": "Engagement",
+            "group": "Content",
+            "pages": [
+              "content/content-brain",
+              "content/blog-agent",
+              "content/page-agent"
+            ]
+          },
+          {
+            "group": "Customer Support",
             "pages": [
               {
                 "group": "Chat Agent",
                 "pages": [
-                  "engagement/chat-agent/overview",
-                  "engagement/chat-agent/create-bot",
-                  "engagement/chat-agent/customize-widget",
-                  "engagement/chat-agent/deploy"
+                  "support/chat-agent/overview",
+                  "support/chat-agent/build",
+                  "support/chat-agent/channels",
+                  "support/chat-agent/deploy",
+                  "support/chat-agent/analytics"
                 ]
               },
-              {
-                "group": "Email Agent",
-                "pages": [
-                  "engagement/email-agent/overview",
-                  "engagement/email-agent/connect-mailbox",
-                  "engagement/email-agent/drafts-and-confidence"
-                ]
-              },
-              "engagement/knowledge-source"
+              "support/conversations"
             ]
           },
           {
-            "group": "Conversion",
+            "group": "Account & Billing",
             "pages": [
-              "conversion/leads",
-              "conversion/calls",
-              "conversion/tickets",
-              "conversion/logs"
+              "account/profile",
+              "account/workspaces",
+              "account/manage-admins",
+              "account/plans",
+              "account/subscription",
+              "account/credits",
+              "account/invoices",
+              "account/contact-support"
             ]
           },
           {
-            "group": "Settings",
+            "group": "Reference",
             "pages": [
-              "settings/profile",
-              "settings/manage-admins",
-              "settings/integrations",
-              "settings/plans-and-billing"
+              "reference/credits",
+              "reference/glossary",
+              "reference/troubleshooting"
             ]
           }
         ]
@@ -89,6 +113,11 @@
           "anchor": "App",
           "href": "https://app.botric.ai",
           "icon": "browser"
+        },
+        {
+          "anchor": "Book a walkthrough",
+          "href": "https://calendly.com/botric-ai/30min",
+          "icon": "calendar"
         },
         {
           "anchor": "Support",

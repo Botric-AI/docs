@@ -1,0 +1,105 @@
+---
+title: Blog Agent
+description: Discover topics from your visibility gaps and generate blog posts built to be cited by AI engines.
+icon: pen-nib
+---
+
+Blog Agent is the writing half of the Content Agent. It works from your [Content Brain](/content/content-brain), so topics come from your actual gaps rather than from a generic keyword tool.
+
+{/* IMAGE: Content Studio, Discover tab */}
+
+## Tabs
+
+| Tab | Purpose |
+| --- | --- |
+| **Overview** | Latest topic ideas, recent blogs, and a shortcut to create the next one |
+| **Discover** | Run topic discovery and review the suggestions |
+| **My Topics** | Topics you've saved for generation |
+| **Blogs** | Everything generated, with status |
+| **History** | Past discovery runs |
+
+## Discovering topics
+
+**Discover blog topics** runs a discovery pass against your Brain and returns ranked ideas. Each idea is scored for how likely it is to earn AI citations, and shows the context it came from — a content gap, a competitor's advantage, a Search Console query.
+
+Discovery costs **20 credits** per run.
+
+You can also **add a custom topic** if you already know what you need to write.
+
+Save the ideas worth writing to **My Topics**.
+
+## Generating a blog
+
+<Steps>
+  <Step title="Pick a saved topic">
+    From **My Topics**, choose a topic and start generation.
+  </Step>
+  <Step title="Wait for the draft">
+    Generation costs **200 credits** and takes a few minutes. Status moves through **Generating** to **Ready**. If it fails, the credits are refunded — the entry is marked **Failed · refunded**.
+  </Step>
+  <Step title="Review the audit scores">
+    Every generated post is scored before you publish it.
+  </Step>
+  <Step title="Publish and record the URL">
+    Publish to your site, then paste the live URL back into Botric so the post can be tracked.
+  </Step>
+</Steps>
+
+## Blog audit scores
+
+Each draft is scored on four dimensions:
+
+| Score | Question it answers |
+| --- | --- |
+| **Citability** | Would an AI engine quote this as a source? |
+| **Readability** | Is it clear at a glance? |
+| **Originality** | Does it say something the existing sources don't? |
+| **Humanization** | Does it read as written rather than generated? |
+
+Use the scores as a review gate. A post that scores well on readability but poorly on citability usually buries its answer too deep.
+
+## Downloading
+
+Generated posts export as **Markdown (.md)**, **HTML (.html)**, **Word (.docx)** or **PDF (.pdf)** — so they drop into whatever CMS you use.
+
+## Statuses
+
+| Status | Meaning |
+| --- | --- |
+| **Saved** | Topic saved, not yet generated |
+| **Generating** | Draft in progress |
+| **Ready** / **Blog ready** | Draft complete and scored |
+| **Completed** | Published, with a live URL recorded |
+| **Failed · refunded** | Generation failed; credits returned |
+| **Skipped** / **Out of scope** | Not pursued |
+
+## Closing the loop
+
+<Steps>
+  <Step title="Publish">
+    Put the post live on your own domain.
+  </Step>
+  <Step title="Confirm crawlability">
+    Check the page is reachable in [Site Audit → AI Crawlability](/search/site-audit).
+  </Step>
+  <Step title="Re-run AI Visibility">
+    Verify the target prompt moved from a gap to *named and cited*.
+  </Step>
+</Steps>
+
+<Note>
+  AI engines take time to pick up new pages. Allow a couple of weeks between publishing and expecting a citation.
+</Note>
+
+## Availability
+
+Blog Agent requires a plan that includes the Content Agent. Without it, the sidebar item shows an **Upgrade** badge.
+
+<CardGroup cols={2}>
+  <Card title="Content gaps" icon="puzzle-piece" href="/discoverability/ai-visibility/content-gaps">
+    Where the best topics come from.
+  </Card>
+  <Card title="Page Agent" icon="table-cells" href="/content/page-agent">
+    Fix pages you already have.
+  </Card>
+</CardGroup>

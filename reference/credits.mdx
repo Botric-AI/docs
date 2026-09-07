@@ -1,0 +1,98 @@
+---
+title: How credits work
+description: A complete reference for what Botric charges, when, and how the balance is spent.
+icon: calculator
+---
+
+Every action that costs compute costs credits. This page is the full picture; [Settings → Credits](/account/credits) is where you see your own numbers.
+
+## The balance
+
+Your organization has one balance, made of two pools:
+
+| Pool | Refills | Expires |
+| --- | --- | --- |
+| **Plan credits** | At the start of each billing cycle | Yes — unused plan credits don't carry forward |
+| **Add-on credits** | When you buy a pack | No — they survive cycle resets |
+
+**Total available = plan credits remaining + all add-on packs remaining.**
+
+Spending draws from plan credits first, then add-on packs. That ordering is deliberate: it means the credits you paid extra for are the ones that survive the reset.
+
+## What costs what
+
+| Action | Unit | Notes |
+| --- | --- | --- |
+| Site Audit | Per run | Independent of page count |
+| GEO / AI Visibility | Per prompt | Billed on the full tracked cap plus add-on prompts |
+| Chat Agent | Per 200 messages | Charged in batches |
+| Topic discovery | 20 credits per run | Content Agent |
+| Blog generation | 200 credits per blog | Refunded if generation fails |
+| Prompt Research | 20 credits per prompt | Maximum 10 prompts per run |
+| Creating a workspace | Site Audit + GEO cost | The first runs are triggered automatically |
+
+Per-unit prices for Site Audit, GEO and chat messages are shown live on the Credits page, since they can change.
+
+## The GEO billing rule
+
+This is the one that surprises people.
+
+<Warning>
+  A GEO run bills your plan's **full tracked-prompt cap plus every add-on prompt** — not the number of prompts currently in the list. Botric refills unlocked tracked slots to the cap on each run, so you're charged for the cap either way.
+</Warning>
+
+Worked example, on a plan with a cap of 20 tracked prompts and 5 add-on slots filled:
+
+```
+25 prompts × per-prompt GEO rate = credits per run
+```
+
+The **Run Analysis** button shows the exact figure before you commit.
+
+### Tracked prompt caps by plan
+
+| Plan | Tracked prompts per site |
+| --- | --- |
+| Free | 5 |
+| Bit | 10 |
+| Byte | 20 |
+| Infinity | 25 |
+
+## Workspace creation
+
+Creating a workspace triggers a Site Audit and a GEO run, so it's charged as the sum of both. Onboarding shows the required amount and warns existing subscribers when their balance is short; the server enforces the limit regardless.
+
+## Refunds
+
+A failed run is refunded automatically. You'll see the debit and the matching refund in your transaction history, and the item is marked as refunded in its own UI — a failed blog shows **Failed · refunded**.
+
+## When you run out
+
+Botric blocks the run before it starts and shows a dialog with:
+
+- What the action **requires**
+- What's **available**
+- The **shortfall**, broken down by component
+
+From there you can buy an add-on pack or upgrade. Nothing is charged partially — a run either has the credits it needs or doesn't start.
+
+## Budgeting
+
+<Tip>
+  A useful rhythm: one GEO run and one Site Audit per week, plus two or three blogs a month. Size your plan around that and buy add-on packs for one-off pushes rather than raising your tier permanently.
+</Tip>
+
+Ways to spend less:
+
+- Run GEO weekly rather than daily — AI answers don't move fast enough to justify more.
+- Use [Prompt Research](/discoverability/prompt-research) to trial prompts instead of burning a tracked slot and a full run on a guess.
+- Re-run Site Audit after you've shipped a batch of fixes, not after each one.
+
+<CardGroup cols={2}>
+  <Card title="Your credits" icon="coins" href="/account/credits">
+    Balance, history and top-ups.
+  </Card>
+  <Card title="Plans" icon="credit-card" href="/account/plans">
+    Credit grants by tier.
+  </Card>
+</CardGroup>

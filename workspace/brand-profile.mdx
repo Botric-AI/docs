@@ -1,0 +1,71 @@
+---
+title: Brand Profile
+description: The brand context every Botric agent reads — name, summary, topics, market, colours and competitors.
+icon: fingerprint
+---
+
+Your brand profile is the single source of truth the other agents work from. Prompt generation, competitor benchmarking, content topics and the way mentions are matched all depend on it.
+
+It's created during [onboarding](/getting-started/onboarding) and edited here.
+
+{/* IMAGE: Brand Profile page */}
+
+## What it contains
+
+| Field | Used by |
+| --- | --- |
+| **Brand name** | Mention matching in AI answers, prompt phrasing |
+| **Brand summary** | Brand perception scoring — what the models *should* be saying |
+| **Core topics** (up to 5, weighted) | Prompt generation, competitor discovery, content topics |
+| **Target market** | Which country's AI results are measured |
+| **Brand colours** | Chat agent theming |
+| **Competitors** | Benchmarking, share of voice, gap analysis |
+
+### Topic weights
+
+Each core topic carries a weight, and the weights always total 100%. Add a topic and it's seeded from the average of your existing weights, then the whole set is renormalised — the first topic absorbs any rounding difference. Weights let you tell Botric that one line of business matters more than another.
+
+### Target market
+
+A single country. It anchors competitor discovery and prompt generation, and your GEO scores are reported for that market. Change it and re-run AI Visibility to see results for the new market.
+
+## Editing
+
+Change any field and choose **Save**. Changes take effect on the next run — existing reports keep the profile they were run with.
+
+<Warning>
+  Renaming your brand or rewriting your summary changes how mentions are matched and how brand perception is scored. Expect your next GEO score to move.
+</Warning>
+
+## Sync from your website
+
+**Sync** re-reads your live website and proposes an updated profile. The result modal tells you:
+
+- Whether a **new** profile was created or an existing one updated.
+- **Which fields changed** — brand name, summary, core services, website.
+- Whether the **competitor list was refreshed**.
+
+Sync is the right move after a rebrand, a repositioning, or a significant site rewrite.
+
+## Competitors
+
+The competitors section lists everyone you're benchmarked against.
+
+- **Add** a competitor by name and website. Manually added competitors are marked and survive a sync or regenerate — Botric won't replace them with freshly generated ones.
+- **Remove** any competitor you no longer care about.
+- **Regenerate** to have Botric find a fresh set from your current topics. Your manual entries are kept and the list is de-duplicated by name and domain.
+
+<Tip>
+  Benchmark against who you actually lose deals to, not the biggest names in your category. A gap against a peer is actionable; a gap against a market leader with a thousand backlinks usually isn't.
+</Tip>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="AI Visibility" icon="sparkles" href="/discoverability/ai-visibility/overview">
+    Run the analysis your profile feeds.
+  </Card>
+  <Card title="Competitors" icon="swords" href="/discoverability/competitors">
+    Benchmark, share of voice and gap matrix.
+  </Card>
+</CardGroup>

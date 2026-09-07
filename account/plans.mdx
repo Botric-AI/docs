@@ -1,0 +1,107 @@
+---
+title: Plans
+description: Compare tiers, start a trial, and upgrade or downgrade.
+icon: credit-card
+---
+
+Botric has four tiers. **Settings → Plans** shows what you're on, what each tier includes, and what changing costs.
+
+{/* IMAGE: Plans page */}
+
+## The tiers
+
+| Plan | Who it's for |
+| --- | --- |
+| **Free** | Get started with the essentials |
+| **Bit** | For growing teams getting started with AI |
+| **Byte** | For teams that need full AI agent capabilities |
+| **Infinity** | For organizations that need everything, unlimited |
+
+Custom plans exist for organizations with requirements outside these tiers. If you're on one, the page says so and upgrade controls are hidden — you're already at the ceiling.
+
+## What varies by plan
+
+The comparison table groups features into four sections.
+
+<AccordionGroup>
+  <Accordion title="Credits">
+    - **Plan credits per cycle** — granted at the start of each billing period
+    - **Trial credits** — granted during a trial
+  </Accordion>
+  <Accordion title="Usage">
+    - **Workspaces** — how many brands you can track
+    - **Sites** — how many domains
+    - **Chatbots** — how many chat agents
+    - **Message history (days)** — how long conversation history is retained
+    - **Admin seats** — team members
+  </Accordion>
+  <Accordion title="AI Agents">
+    - **Site Audit**
+    - **GEO Agent**
+    - **Prompts** — your tracked prompt cap per site
+    - **Content Agent**
+  </Accordion>
+  <Accordion title="Features">
+    - **Reports & analytics**
+    - **Custom branding** — remove the Botric badge from your chat widget
+    - **Video/audio knowledge** — transcribe media into your knowledge base
+  </Accordion>
+</AccordionGroup>
+
+Additional entitlements gate individual pages: knowledge base, conversations, integrations, prompt research and omni-channel. When your plan doesn't include one, the sidebar item shows an **Upgrade** badge.
+
+### Tracked prompt caps
+
+Your plan's prompt cap matters more than it looks, because a GEO run bills for the full cap:
+
+| Plan | Tracked prompts per site |
+| --- | --- |
+| Free | 5 |
+| Bit | 10 |
+| Byte | 20 |
+| Infinity | 25 |
+
+Paid plans also include a fixed number of add-on prompt slots per site, which you fill yourself from [Prompt Research](/discoverability/prompt-research).
+
+## Billing intervals
+
+Paid plans are billed **monthly** or **yearly**. Yearly is the cheaper effective rate; switch at any time and the change is prorated.
+
+## Trials
+
+Paid plans offer a **7-day trial**. Starting one requires a card, and the plan converts automatically at the end unless you cancel. Your subscription status shows **Trial** and the plans page shows the end date.
+
+You can end a trial early and move straight onto the paid plan — your saved card is charged immediately.
+
+<Note>
+  A trial can only be used once per organization.
+</Note>
+
+## Upgrading
+
+| From | Behaviour |
+| --- | --- |
+| **Free → Paid** | Stripe Checkout; access changes as soon as payment succeeds |
+| **Paid → Higher paid** | A proration preview shows exactly what you'll be charged now before you confirm |
+| **Trial → Paid** | Charged immediately; the trial ends |
+
+New entitlements apply straight away, and plan credits are granted for the new tier.
+
+## Downgrading and cancelling
+
+Cancellation is managed from [Subscription](/account/subscription). Access continues until the end of the paid period.
+
+<Warning>
+  Downgrading below your current usage — more workspaces than the lower plan allows, for example — restricts what you can do until you're back within the limits.
+</Warning>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Subscription" icon="receipt" href="/account/subscription">
+    Status, payment method, cancel and reactivate.
+  </Card>
+  <Card title="Credits" icon="coins" href="/account/credits">
+    Balance, costs and top-ups.
+  </Card>
+</CardGroup>

@@ -1,0 +1,64 @@
+---
+title: Agent analytics
+description: How a single chat agent is performing — volume, resolution and answer confidence.
+icon: chart-simple
+---
+
+Each chat agent has its own analytics page, reachable from the agent's detail view. It covers that agent only; the workspace [dashboard](/workspace/dashboard) aggregates across all of them.
+
+{/* IMAGE: Chat agent analytics */}
+
+## Headline metrics
+
+| Metric | What it tells you |
+| --- | --- |
+| **Total conversations** | Volume over the selected period |
+| **Resolution rate** | Share of conversations that ended resolved |
+| **Avg response time** | How quickly the agent replies |
+| **Customer satisfaction** | Feedback from visitors, where given |
+
+## Answer quality
+
+Every answer is classified by how well the agent's knowledge covered the question:
+
+| Bucket | Meaning | Action |
+| --- | --- | --- |
+| **Confident answers** | Well covered by your knowledge sources | Nothing |
+| **Tentative answers** | Partially covered — the agent hedged | Strengthen the relevant source |
+| **Unanswered** | Not covered at all | Add a source or an FAQ |
+
+Alongside these: **total queries**, **support requests**, **leads**, **bookings**, **tickets** and **resolved** counts.
+
+<Tip>
+  Unanswered questions are the highest-value list in Botric. Every one is a visitor who wanted something you didn't have — and each is a one-minute fix as an [FAQ](/workspace/knowledge-source).
+</Tip>
+
+## Using the numbers
+
+<Steps>
+  <Step title="Work the unanswered list weekly">
+    Add an FAQ or knowledge source for each recurring question.
+  </Step>
+  <Step title="Convert tentative to confident">
+    Tentative answers usually mean the content exists but is vague. Tighten it.
+  </Step>
+  <Step title="Watch resolution rate after each change">
+    It's the cleanest measure of whether your knowledge base is improving.
+  </Step>
+  <Step title="Tie leads and bookings back to channels">
+    If leads are flat, revisit the form on the [Lead Generation channel](/support/chat-agent/channels).
+  </Step>
+</Steps>
+
+## Message history
+
+How far back conversation history is retained is set by your plan. See [Plans](/account/plans).
+
+<CardGroup cols={2}>
+  <Card title="Conversations" icon="list" href="/support/conversations">
+    The individual sessions behind these numbers.
+  </Card>
+  <Card title="Knowledge Source" icon="book-open" href="/workspace/knowledge-source">
+    Close the gaps the analytics reveal.
+  </Card>
+</CardGroup>

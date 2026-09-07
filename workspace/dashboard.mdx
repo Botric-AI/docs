@@ -1,0 +1,82 @@
+---
+title: Dashboard
+description: The single view of your site health, AI visibility, traffic and engagement.
+icon: gauge
+---
+
+The workspace dashboard is the answer to "how are we doing?" It pulls the latest Site Audit, the latest GEO run, your connected analytics and your chat agent activity into one page.
+
+{/* IMAGE: Workspace dashboard */}
+
+## Date range
+
+A selector at the top scopes the time-based cards. Options are **Last 7 days**, **Last 30 days**, **Last 90 days** and **All time**. Score cards compare against the previous audit, run or period — the delta is labelled *vs prev. audit*, *vs prev. run* or *vs prev. period*.
+
+## Summary stats
+
+The top row carries the headline counters: chat sessions, leads, tickets and bookings for the selected range. Chat-related figures appear only on plans that include a chat agent.
+
+## Alerts
+
+Anything that needs your attention right now — a failed run, a critical audit issue, a knowledge source that didn't train — surfaces here with a link to the page that fixes it.
+
+## Site Health
+
+Your Site Audit score out of 100, from the most recent completed audit.
+
+| Score | Band |
+| --- | --- |
+| 90–100 | Excellent |
+| 80–89 | Good |
+| 70–79 | Fair |
+| 0–69 | Needs improvement |
+
+Selecting the card opens the full [Site Audit](/search/site-audit) report.
+
+## AI Visibility (GEO)
+
+Your GEO score out of 100, from the most recent completed GEO run, using the same bands as Site Health. Below it, the GEO insights section breaks out mention rate, the platforms you were tested on, and your most urgent content gaps.
+
+Selecting the card opens [AI Visibility](/discoverability/ai-visibility/overview).
+
+<Tip>
+  Both headline cards have a **What is this?** explainer if you're sharing the dashboard with someone new to the terminology.
+</Tip>
+
+## AI traffic summary
+
+Once [Google Analytics is connected](/workspace/integrations), this card shows how much of your traffic arrived from AI assistants — ChatGPT, Perplexity, Gemini and others — and how that share is trending. Without a connection it prompts you to connect GA4.
+
+## Engagement
+
+Present when your plan includes a chat agent:
+
+- **Chat agents** — how many you have and their status.
+- **Knowledge sources** — how many items are trained.
+- **Sessions trend** — chat sessions per agent over time.
+- **Leads trend** — leads captured per day.
+- **Tickets and bookings** — support requests and meetings booked.
+- **Location usage** — where your visitors are.
+- **Most asked questions** — what visitors keep asking, which is the fastest signal for what to add to your knowledge base.
+- **Recent conversations** — the latest sessions, with a link into [Conversations](/support/conversations).
+
+<Note>
+  On plans without chat agents, the engagement cards are replaced by an upgrade prompt. Site Health, AI Visibility and traffic remain available.
+</Note>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Site Audit" icon="globe" href="/search/site-audit">
+    Dig into the technical issues behind your Site Health score.
+  </Card>
+  <Card title="AI Visibility" icon="sparkles" href="/discoverability/ai-visibility/overview">
+    See which prompts name you and which name a competitor.
+  </Card>
+  <Card title="Analytics" icon="chart-line" href="/workspace/analytics">
+    Full GA4 and Search Console reporting.
+  </Card>
+  <Card title="Reports" icon="file-lines" href="/workspace/reports">
+    Monthly reports and complete run history.
+  </Card>
+</CardGroup>

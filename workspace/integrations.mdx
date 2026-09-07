@@ -1,0 +1,60 @@
+---
+title: Integrations
+description: Connect Google Analytics, Search Console and other accounts to your workspace.
+icon: puzzle-piece
+---
+
+Integrations connect external accounts to a workspace. Two are live today; the rest are in development.
+
+{/* IMAGE: Integrations page */}
+
+## Available now
+
+<CardGroup cols={2}>
+  <Card title="Google Search Console" icon="magnifying-glass">
+    Clicks, impressions, top queries and pages from Google Search.
+  </Card>
+  <Card title="Google Analytics" icon="chart-simple">
+    Sessions, users, channels and the AI-referral breakdown.
+  </Card>
+</CardGroup>
+
+Both feed the [Analytics](/workspace/analytics) page, and Search Console also enriches your [monthly reports](/workspace/reports).
+
+## Connecting Google Search Console
+
+<Steps>
+  <Step title="Choose Connect">
+    Select **Google Search Console** and authorise Botric with the Google account that owns the property.
+  </Step>
+  <Step title="Match the property">
+    Botric matches your workspace domain to a verified Search Console property. If nothing matches, you're told which domain it looked for — verify that property in Search Console and retry.
+  </Step>
+  <Step title="Confirm">
+    Once connected, the GSC tab in Analytics fills in. Use **Sync now** to pull fresh data on demand.
+  </Step>
+</Steps>
+
+## Connecting Google Analytics
+
+Authorise Botric with the Google account that has access to the GA4 property, then select the property to link. A connection can sit in a pending state until a property is chosen — the page tells you when that's the case.
+
+<Tip>
+  The **See Agents Traffic** task on your Get Started checklist links straight here with GA4 pre-selected.
+</Tip>
+
+## Managing connections
+
+Each connected integration shows its status and offers **Sync now** and **Disconnect**. Disconnecting stops data collection immediately; historical data already pulled stays in your reports.
+
+## Plan requirements
+
+Integrations are gated by plan. Google Analytics shares the Search Console entitlement. When your plan doesn't include an integration, its tile shows an **Upgrade** badge linking to [Plans](/account/plans).
+
+## In development
+
+Zoho CRM, HubSpot, WhatsApp Business and Google Calendar appear on the page marked **Coming soon**. They can't be connected yet.
+
+<Info>
+  Looking to put a chat agent on your site? That's not an integration — it's a script tag. See [Deploying your chat agent](/support/chat-agent/deploy).
+</Info>

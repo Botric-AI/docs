@@ -1,0 +1,123 @@
+---
+title: Deploy
+description: Put your chat agent on your website with a single script tag.
+icon: code
+---
+
+The **Connect** tab holds the deployment snippets. Pick the version that matches how you want the agent to appear, copy the code, and paste it into your site.
+
+{/* IMAGE: Connect tab with embed code */}
+
+## Choose a version
+
+<CardGroup cols={3}>
+  <Card title="Widget" icon="comment">
+    **Recommended.** Floating chat button on every page, opens when clicked.
+  </Card>
+  <Card title="iframe" icon="display">
+    Always-open assistant embedded directly on a page.
+  </Card>
+  <Card title="Modal" icon="arrow-pointer">
+    Opens in a larger window when your own button is clicked.
+  </Card>
+</CardGroup>
+
+## Widget
+
+Paste this once, anywhere in your HTML — before `</body>` is conventional. It loads asynchronously and won't block your page.
+
+```html
+<script
+  src="https://widget.botric.ai/"
+  data-bot-id="YOUR_CHATBOT_ID"
+  async>
+</script>
+```
+
+The `data-bot-id` in your own snippet is filled in for you; copy it from the Connect tab rather than typing it.
+
+## iframe
+
+Embeds the assistant inline, always open. Use it on a dedicated support or help page.
+
+```html
+<iframe
+  src="https://app.botric.ai/public/embed/YOUR_CHATBOT_ID"
+  width="100%"
+  style="height: 100%; min-height: 700px"
+  allow="microphone">
+</iframe>
+```
+
+<Note>
+  The `allow="microphone"` attribute enables voice input. Drop it if you don't want the agent requesting microphone access.
+</Note>
+
+## Modal
+
+Two pieces. Add the container where your trigger button should sit:
+
+```html
+<div id="chat-agent"></div>
+```
+
+Then load the script with the container id:
+
+```html
+<script
+  src="https://widget.botric.ai/"
+  data-bot-id="YOUR_CHATBOT_ID"
+  data-container-id="chat-agent"
+  async>
+</script>
+```
+
+## Before you go live
+
+<Steps>
+  <Step title="Confirm knowledge is trained">
+    The Knowledge tab should show no failed or pending items.
+  </Step>
+  <Step title="Test in preview">
+    Use **Open preview** and ask the questions your visitors actually ask.
+  </Step>
+  <Step title="Set allowed domains">
+    Restrict the widget to your own domains on the Info & Appearance tab.
+  </Step>
+  <Step title="Deploy to staging first">
+    Confirm placement and theming before production.
+  </Step>
+</Steps>
+
+## Installing on common platforms
+
+| Platform | Where the script goes |
+| --- | --- |
+| **WordPress** | Theme footer, or a header/footer scripts plugin |
+| **Shopify** | `theme.liquid`, before `</body>` |
+| **Webflow** | Project settings → Custom code → Footer code |
+| **Next.js / React** | A `<Script>` tag in your root layout |
+| **Squarespace / Wix** | Settings → Custom code injection |
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="The widget doesn't appear">
+    Check the current domain is in **Allowed domains**, confirm the agent isn't disabled in **Settings**, and look for script errors in your browser console.
+  </Accordion>
+  <Accordion title="It appears but can't answer anything">
+    The agent has no trained knowledge, or none is linked on its Knowledge tab. See [Knowledge Source](/workspace/knowledge-source).
+  </Accordion>
+  <Accordion title="Branding still shows after switching plan">
+    **Show branding** is a per-agent toggle on Info & Appearance. Turn it off and save.
+  </Accordion>
+</AccordionGroup>
+
+<CardGroup cols={2}>
+  <Card title="Agent analytics" icon="chart-simple" href="/support/chat-agent/analytics">
+    How the deployed agent is performing.
+  </Card>
+  <Card title="Conversations" icon="list" href="/support/conversations">
+    Read what visitors are actually asking.
+  </Card>
+</CardGroup>

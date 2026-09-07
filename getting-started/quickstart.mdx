@@ -1,72 +1,92 @@
 ---
 title: Quickstart
-description: Create your Botric account, set up your first workspace, and start exploring the platform.
+description: From sign-up to your first AI visibility report in about fifteen minutes.
 icon: rocket
 ---
 
-This guide walks you through signing up for Botric, creating your workspace, and completing initial setup so you can start using the platform right away.
+This is the fastest path from a new account to real data. Every step links to a fuller guide if you want the detail.
 
-## Create Your Account
+## 1. Create your account
+
+Go to [app.botric.ai](https://app.botric.ai) and sign up with **Google** or with your **email address**. Email sign-up sends a six-digit code — there is no password.
+
+<Card title="Account setup" icon="user-plus" href="/getting-started/account-setup">
+  Sign-in methods, verification codes, and switching accounts.
+</Card>
+
+## 2. Complete onboarding
+
+Onboarding is a four-step wizard. Give it your website URL and it does most of the rest.
 
 <Steps>
-  <Step title="Go to the sign-up page">
-    Navigate to [app.botric.ai](https://app.botric.ai) in your browser. Click **Sign Up** to get started.
+  <Step title="Website">
+    Name the workspace, paste your website URL, and pick your target market (one country).
   </Step>
-  <Step title="Choose a sign-up method">
-    <Tabs>
-      <Tab title="Email">
-        Enter your email address and click **Continue**. Botric sends a one-time verification code to your inbox. Enter the code to verify your email and complete registration.
-      </Tab>
-      <Tab title="Google">
-        Click **Continue with Google** and authorize Botric with your Google account. Your account is created automatically using your Google profile information.
-      </Tab>
-    </Tabs>
+  <Step title="Brand">
+    Botric reads your site and drafts your brand name, summary, up to five core topics and your brand colours. Correct anything that's wrong — every later agent reads this.
   </Step>
-  <Step title="Set up your profile">
-    After verification, you are prompted to enter your name and organization details. Fill in the required fields and continue.
+  <Step title="Competitors">
+    Botric finds competitors for each of your topics. Keep up to five, add your own, drop the rest.
+  </Step>
+  <Step title="Pages">
+    Choose which of your site's pages the first audit should crawl.
   </Step>
 </Steps>
 
-## Create Your Workspace
+If you're a brand-new account you'll pick a plan straight after — free, or a paid plan with a 7-day trial. Your workspace and first runs are created once the plan is active.
 
-Once your account is ready, Botric prompts you to create your first workspace. A workspace represents a single website or project you want to manage.
+<Card title="Onboarding, step by step" icon="wand-magic-sparkles" href="/getting-started/onboarding">
+  What each step collects and how to change it later.
+</Card>
 
-1. Enter your **website URL** — this is the site Botric will audit and monitor.
-2. Give your workspace a name (defaults to your domain).
-3. Click **Create** to proceed to the onboarding wizard.
+## 3. Let the first runs finish
 
-<Tip>
-  You can create multiple workspaces later from the workspace switcher in the sidebar.
-</Tip>
+The moment your workspace exists, Botric fires two jobs in parallel:
 
-## Complete Onboarding
+- **Site Audit** — crawls the pages you selected and scores technical health.
+- **AI Visibility (GEO)** — asks your tracked prompts across the AI platforms on your plan and scores how often you're named and cited.
 
-The onboarding wizard walks you through five steps to configure your workspace. See the full [Onboarding Guide](/getting-started/onboarding) for detailed instructions on each step.
+Both take a few minutes. You can leave the page; progress banners and the sidebar badges pick up where you left off.
 
-{/* IMAGE: Onboarding wizard first step screenshot */}
+## 4. Read your scores
 
-## Explore the Dashboard
+Open **Dashboard** in the workspace sidebar. You get two headline numbers:
 
-After completing onboarding, you land on your [Dashboard](/getting-started/dashboard). From here you can:
+- **Site Health** — 0–100, from the latest Site Audit.
+- **AI Visibility (GEO)** — 0–100, from the latest GEO run.
 
-- View your **Site Health** score and audit results
-- Check your **AI Search Visibility** (GEO) metrics
-- Track **Leads** captured by your agents
-- Follow the **Get Started** checklist to complete your setup
+<Card title="Workspace dashboard" icon="gauge" href="/workspace/dashboard">
+  What every card on the dashboard means.
+</Card>
 
-## Next Steps
+## 5. Work the Get Started checklist
+
+**Get Started** in the sidebar tracks six tasks and shows your progress as a ring:
+
+| Task | Where it goes |
+| --- | --- |
+| Run Site Audit | [Site Audit](/search/site-audit) |
+| Review AI Visibility (GEO) | [AI Visibility](/discoverability/ai-visibility/overview) |
+| Add Knowledge Sources | [Knowledge Source](/workspace/knowledge-source) |
+| See Agents Traffic | [Integrations](/workspace/integrations) → connect GA4 |
+| Launch Chat Agent | [Chat Agent](/support/chat-agent/overview) |
+| Generate a Blog | [Blog Agent](/content/blog-agent) |
+
+Steps that your plan doesn't include show an **Upgrade** button instead and link to [Plans](/account/plans).
+
+## 6. Pick your next move
 
 <CardGroup cols={2}>
-  <Card title="Onboarding Wizard" icon="wand-magic-sparkles" href="/getting-started/onboarding">
-    Learn what each onboarding step does.
+  <Card title="Close a content gap" icon="puzzle-piece" href="/discoverability/ai-visibility/content-gaps">
+    Prompts where an AI cites a competitor and not you.
   </Card>
-  <Card title="Dashboard Overview" icon="gauge" href="/getting-started/dashboard">
-    Understand your dashboard metrics.
+  <Card title="Publish a blog that gets cited" icon="pen-nib" href="/content/blog-agent">
+    Build the Content Brain, discover topics, generate a post.
   </Card>
-  <Card title="Site Audit" icon="stethoscope" href="/discovery/site-audit">
-    Dive into your website health report.
+  <Card title="Deploy a chat agent" icon="robot" href="/support/chat-agent/deploy">
+    One script tag on your site.
   </Card>
-  <Card title="Chat Agent" icon="robot" href="/engagement/chat-agent/overview">
-    Create your first AI chatbot.
+  <Card title="Connect Analytics" icon="chart-line" href="/workspace/integrations">
+    See which AI crawlers and referrals actually reach your site.
   </Card>
 </CardGroup>

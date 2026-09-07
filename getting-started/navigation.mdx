@@ -1,0 +1,94 @@
+---
+title: Navigating Botric
+description: The sidebar, top bar, workspace switcher and keyboard shortcuts.
+icon: compass
+---
+
+Botric has two navigation modes: **workspace** (everything about one brand) and **settings** (everything about your account). The sidebar swaps between them.
+
+{/* IMAGE: Sidebar and top navigation */}
+
+## The workspace sidebar
+
+At the top sits the **workspace switcher**. It lists every workspace you can access, lets owners and admins rename or delete one, and offers **Add workspace** — which starts [onboarding](/getting-started/onboarding) again.
+
+Below it, the workspace's tools in five groups:
+
+<AccordionGroup>
+  <Accordion title="Overview (untitled group)">
+    - **Get Started** — the six-task setup checklist
+    - **Dashboard** — headline scores and engagement
+    - **Brand Profile** — your brand context and competitors
+    - **Knowledge Source** — the content that trains your agents
+    - **Reports** — monthly reports and full run histories
+    - **Analytics** — AI traffic, Google Analytics and Search Console
+    - **Integrations** — connect external accounts
+  </Accordion>
+  <Accordion title="SEARCH">
+    - **Site Audit** — technical health, page-level grades, priority fixes
+    - **GEO Audit** — how ready your site is to be cited by AI engines
+  </Accordion>
+  <Accordion title="DISCOVERABILITY">
+    - **AI Visibility (GEO)** — the main visibility report
+    - **Prompt Research** — test prompts before committing them to tracking
+    - **Citations** — which sources AI answers pull from
+    - **Competitors** — benchmarking and share of voice
+  </Accordion>
+  <Accordion title="CONTENT">
+    - **Blog Agent** — Content Brain, topic discovery, blog generation
+    - **Page Agent** — page-by-page fixes for audited pages
+  </Accordion>
+  <Accordion title="CUSTOMER SUPPORT">
+    - **Chat Agent** — build, theme and deploy your chatbot
+    - **Conversations** — logs, tickets, leads and calls
+  </Accordion>
+</AccordionGroup>
+
+### Badges
+
+Some items carry a count:
+
+| Badge | Meaning |
+| --- | --- |
+| Red on **Site Audit** | Total technical issues in the latest audit |
+| Red on **AI Visibility (GEO)** | Content gaps found in the latest GEO run |
+| Blue on **Conversations** | New logs, tickets, leads and calls in the recent window |
+
+An **Upgrade** pill on an item means your plan doesn't include it. Selecting it opens [Plans](/account/plans).
+
+## The top bar
+
+- **Breadcrumbs** — your position inside the workspace; each level is clickable.
+- **Credit pill** — your remaining credit balance. It turns amber as the balance runs low and red when it's nearly out. Selecting it opens [Credits](/account/credits).
+- **Subscription chip** — shows trial, cancellation or payment-due states.
+- **What's new** — release announcements.
+- **Docs, demo and support** links.
+
+On Site Audit and AI Visibility detail pages the top bar also shows the site's favicon, its domain, the scan status (*Scanning…*, *Scan Complete*, *Scan failed*) and the market the scores cover.
+
+## Settings
+
+Selecting **Settings** replaces the workspace sidebar with the account sidebar: Profile, Workspaces, Manage Admins, Plans, Subscription, Credits, Invoices, Contact Support. A **back** control at the top returns you to the workspace you came from.
+
+<Card title="Account & Billing" icon="gear" href="/account/profile">
+  Everything under Settings.
+</Card>
+
+## Keyboard shortcuts
+
+| Shortcut | Action |
+| --- | --- |
+| <kbd>⌘</kbd> + <kbd>K</kbd> / <kbd>Ctrl</kbd> + <kbd>K</kbd> | Open the command palette |
+
+The command palette jumps to Settings, to the current workspace's dashboard, or to any other workspace.
+
+## Deep links
+
+Most tabbed pages keep their state in the URL, so you can bookmark or share an exact view:
+
+```
+/w/<workspaceId>/site-audit/<siteId>?tab=technical-audit
+/w/<workspaceId>/geo-agent/<siteId>/competitors?tab=deep-analysis
+/w/<workspaceId>/engagements/conversations?tab=tickets
+/w/<workspaceId>/reports?tab=geo&site=<siteId>
+```

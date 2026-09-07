@@ -1,0 +1,108 @@
+---
+title: Site Audit
+description: Crawl your site, score its technical health, and get a ranked list of what to fix.
+icon: globe
+---
+
+Site Audit is the technical foundation. It crawls the pages you nominate, grades each one, and rolls everything into a single **Site Health** score out of 100.
+
+Your first audit runs automatically at the end of [onboarding](/getting-started/onboarding).
+
+{/* IMAGE: Site Audit report, Overview tab */}
+
+## Running an audit
+
+From the Site Audit page choose **Resync audit** to run a fresh crawl. The cost in credits is shown on the button before you commit.
+
+While a run is in flight, a progress banner sits under the tab bar and the top bar shows **Scanning…**. You can navigate away — the run continues and the sidebar badge updates when it finishes.
+
+<Note>
+  A Site Audit run costs credits. If your balance is short, Botric blocks the run and offers to top up. See [How credits work](/reference/credits).
+</Note>
+
+## Reading the score
+
+The hero card shows Site Health out of 100 on a gauge, alongside the change since your previous audit.
+
+| Score | Band |
+| --- | --- |
+| 90–100 | Excellent |
+| 80–89 | Good |
+| 70–79 | Fair |
+| 0–69 | Needs improvement |
+
+Alongside it: **Total URLs**, **Audited URLs**, **Total issues**, **Critical issues** and **Error pages**, plus domain metrics — **Domain Authority**, **Backlinks**, **Referring Domains** and **Organic Traffic**.
+
+**Potential gain** estimates how far your overall score would rise if you fixed every issue in a category. It's the fastest way to decide where to start.
+
+## Report tabs
+
+<AccordionGroup>
+  <Accordion title="Overview">
+    Hero score, category score bars, domain analytics, top priorities and the page-level grade distribution. Below that, a preview of your three most recent audits with a link to the full [run history](/workspace/reports).
+  </Accordion>
+  <Accordion title="AI Crawlability">
+    Whether AI engines can actually reach your content:
+
+    - **Site crawlable** — are crawlers permitted?
+    - **Sitemap found** — is a sitemap published and reachable?
+    - **Resources accessible** — can crawlers load the assets a page needs?
+    - **Crawl delay** — is anything throttling them?
+
+    This tab also lists AI engine citations detected for the site.
+
+    <Tip>
+      Fix crawlability before anything else. An AI engine that can't read a page will never cite it, however good the content is.
+    </Tip>
+  </Accordion>
+  <Accordion title="Technical Audit">
+    The full issue list, filterable by severity — **All**, **Critical**, **High**, **Medium**, **Low** — and groupable by category. Each issue expands to show:
+
+    - **Impact** — how much it costs you
+    - **Why it matters** — the reasoning
+    - **How to fix** — concrete remediation steps
+    - The affected URLs
+  </Accordion>
+  <Accordion title="Priority Fixes">
+    The same issues, ranked by expected score improvement rather than by severity. Work top-down.
+  </Accordion>
+  <Accordion title="Page Reports">
+    Every crawled page with its own score and grade. Group by URL path segment to spot a whole section of the site dragging the average down, and open any page to see its specific issues.
+  </Accordion>
+</AccordionGroup>
+
+## Page grades
+
+Each page gets a letter grade with sub-grades, and the distribution chart shows how your pages fall across the bands.
+
+| Band | Score | Sub-grades |
+| --- | --- | --- |
+| **A** | 90–100 | A+, A, A- |
+| **B** | 80–89 | B+, B, B- |
+| **C** | 70–79 | C+, C, C- |
+| **D** | 0–69 | D, F |
+
+## Managing sites
+
+The Site Audit list page holds the sites in this workspace. From it you can **add a site**, **edit** one, or **delete** one.
+
+<Warning>
+  Deleting a site removes its audit history and its GEO reports along with it.
+</Warning>
+
+## Downloading and comparing
+
+**Download report** exports a completed audit. **Compare** puts two runs side by side so you can show exactly what a fix moved.
+
+## From audit to fixes
+
+Site Audit tells you what's wrong. [Page Agent](/content/page-agent) generates the actual fixes for an audited page.
+
+<CardGroup cols={2}>
+  <Card title="GEO Audit" icon="gauge-high" href="/search/geo-audit">
+    The same idea, scored for AI citability rather than search.
+  </Card>
+  <Card title="Page Agent" icon="table-cells" href="/content/page-agent">
+    Turn audit findings into page-level content fixes.
+  </Card>
+</CardGroup>
